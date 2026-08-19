@@ -1,8 +1,10 @@
 # 🔥 Senior Go Backend Combat
 
+![LOGO](./LOGO.png)
+
 > **8 часов. 1 production-like проект. 1 инженерная модель мышления. 1 финальное mock interview.**
 
-**Go Backend Combat** — интенсив по Go backend engineering для разработчика, который уже умеет программировать, но хочет быстро перейти к уровню **strong middle / senior interview mindset**.
+**Senior Go Backend Combat** — интенсив по Go backend engineering для разработчика, который уже умеет программировать, но хочет быстро перейти к уровню **strong middle / senior interview mindset**.
 
 Мы не изучаем Go как набор синтаксических конструкций. Мы строим один backend-проект — **JobFlow** — и постепенно превращаем его из небольшой Go-программы в распределённую production-like систему.
 
