@@ -1,0 +1,17 @@
+# artifact:.gitignore | v1.0.0 | 2026-08-19T06:54:00Z | Topic: Delivery | Repository hygiene
+
+.env
+.env.*
+!.env.example
+
+bin/
+dist/
+coverage/
+tmp/
+
+.idea/
+.vscode/
+
+*.log
+
+.DS_Store
