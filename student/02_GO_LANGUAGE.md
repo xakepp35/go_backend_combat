@@ -1,5 +1,3 @@
-reply:"student/02_GO_LANGUAGE.md" v1.0.0 2026-08-19T04:45:00Z Topic: Delivery Summary: Дидактический материал ученика — Go Language и первая версия JobFlow
-
 # Go Backend Combat — 01. LANGUAGE
 
 **Version:** 1.0.0

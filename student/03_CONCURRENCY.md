@@ -1,5 +1,3 @@
-artifact:student/02_CONCURRENCY.md v1.0.0 2026-08-19T07:48:00Z Topic: Delivery Summary: Дидактический материал ученика — Go Concurrency, runtime model, worker pool и безопасный lifecycle
-
 # Go Backend Combat — 02. CONCURRENCY
 
 **Version:** 1.0.0

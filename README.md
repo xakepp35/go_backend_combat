@@ -1,40 +1,37 @@
 # 🔥 Senior Go Backend Combat
 
-![LOGO](./LOGO.png)
+> **Боевой курс по GO для выхода на middle+/senior. 1 production проект. 1 инженерная модель мышления. 1 финальное mock interview.**
 
-> **8 часов. 1 production-like проект. 1 инженерная модель мышления. 1 финальное mock interview.**
+![LOGO](./LOGO.png)
 
 **Senior Go Backend Combat** — интенсив по Go backend engineering для разработчика, который уже умеет программировать, но хочет быстро перейти к уровню **strong middle / senior interview mindset**.
 
+---
+
+# 🧭 Навигация по курсу
+
+| Урок   | Тема                                                                   | Теория                                       | Практика                                      | Ментор                                      |
+| ------ | ---------------------------------------------------------------------- | -------------------------------------------- | --------------------------------------------- | ------------------------------------------- |
+| **01** | Модель мышления Engineering Mindset                                    | [Теория](student/01_ENGINEERING_MINDSET.md)  | [Практика](combat/01_ENGINEERING_MINDSET.md)  | [Ментор](mentor/01_ENGINEERING_MINDSET.md)  |
+| **01** | Go Language + JobFlow v0                                               | [Теория](student/02_GO_LANGUAGE.md)          | [Практика](combat/02_GO_LANGUAGE.md)          | [Ментор](mentor/02_GO_LANGUAGE.md)          |
+| **02** | Go Concurrency, Worker Pool, cancellation, synchronization             | [Теория](student/03_CONCURRENCY.md)          | [Практика](combat/03_CONCURRENCY.md)          | [Ментор](mentor/03_CONCURRENCY.md)          |
+| **03** | Design Principles, SOLID                                               | [Теория](student/04_DESIGN_PRINCIPLES.md)    | [Практика](combat/04_DESIGN_PRINCIPLES.md)    | [Ментор](mentor/04_DESIGN_PRINCIPLES.md)    |
+| **04** | Data & Persistence,  PostgreSQL, SQL, Goose, pgxpool, transactions     | [Теория](student/05_DATA_PERSISTENCE.md)     | [Практика](combat/05_DATA_PERSISTENCE.md)     | [Ментор](mentor/05_DATA_PERSISTENCE.md)     |
+| **05** | Distributed Systemsб Kafka/Redpanda, Outbox, idempotency, retry        | [Теория](student/06_DISTRIBUTED_SYSTEMS.md)  | [Практика](combat/06_DISTRIBUTED_SYSTEMS.md)  | [Ментор](mentor/06_DISTRIBUTED_SYSTEMS.md)  |
+| **06** | Backend Architecture, HTTP, application layer, Redis, composition root | [Теория](student/07_BACKEND_ARCHITECTURE.md) | [Практика](combat/07_BACKEND_ARCHITECTURE.md) | [Ментор](mentor/07_BACKEND_ARCHITECTURE.md) |
+| **07** | Project Completion, Финальная сборка, smoke tests, failure review      | [Теория](student/07_BACKEND.md)              | [Практика](combat/07_BACKEND.md)              | [Ментор](mentor/07_BACKEND_ARCHITECTURE.md) |
+| **08** | Mock Interview 60-минутное интервью по всему курсу                     | [Теория](student/08_INTERVIEW.md)            | [Практика](combat/08_INTERVIEW.md)            | [Ментор](mentor/08_INTERVIEW.md)            |
+
+---
+
+
+# 🎯 Что должно измениться после курса
+
 Мы не изучаем Go как набор синтаксических конструкций. Мы строим один backend-проект — **JobFlow** — и постепенно превращаем его из небольшой Go-программы в распределённую production-like систему.
-
-Каждая новая технология появляется потому, что возникает реальная инженерная проблема:
-
-```text
-Go
- ↓
-Concurrency
- ↓
-Design
- ↓
-PostgreSQL
- ↓
-Kafka / Redpanda
- ↓
-HTTP + Redis
- ↓
-Backend Architecture
- ↓
-Mock Interview
-```
 
 Главная задача курса:
 
 > **Научиться не угадывать «правильный паттерн», а принимать, объяснять и защищать инженерное решение.**
-
----
-
-# 🎯 Что должно измениться после курса
 
 К концу курса ученик должен уметь не только написать Go-код, но и объяснить:
 
@@ -154,23 +151,6 @@ structs / methods
 └── interview/
     └── README.md
 ```
-
----
-
-# 🧭 Навигация по курсу
-
-| Урок   | Тема                              | Главный результат                                | Материалы                                                                                |
-| ------ | --------------------------------- | ------------------------------------------------ | ---------------------------------------------------------------------------------------- |
-| **01** | Engineering Mindset + Go Language | Go-модель мышления + JobFlow v0                  | [Ментор](mentor/01_ENGINEERING_MINDSET.md) · [Ученик](student/01_ENGINEERING_MINDSET.md) |
-| **02** | Go Concurrency                    | Worker Pool, cancellation, synchronization       | [Ментор](mentor/03_CONCURRENCY.md) · [Ученик](student/02_CONCURRENCY.md)                 |
-| **03** | Design Principles                 | SOLID + design through cost of change            | [Ментор](mentor/04_DESIGN_PRINCIPLES.md) · [Ученик](student/03_DESIGN.md)                |
-| **04** | Data & Persistence                | PostgreSQL, SQL, Goose, pgxpool, transactions    | [Ментор](mentor/05_DATA_PERSISTENCE.md) · [Ученик](student/04_DATA.md)                   |
-| **05** | Distributed Systems               | Kafka/Redpanda, Outbox, idempotency, retry       | [Ментор](mentor/06_DISTRIBUTED_SYSTEMS.md) · [Ученик](student/05_DISTRIBUTED.md)         |
-| **06** | Backend Architecture              | HTTP, application layer, Redis, composition root | [Ментор](mentor/07_BACKEND_ARCHITECTURE.md) · [Ученик](student/06_ARCHITECTURE.md)       |
-| **07** | Project Completion                | Финальная сборка, smoke tests, failure review    | [Ментор](mentor/07_BACKEND_ARCHITECTURE.md) · [Ученик](student/07_BACKEND.md)            |
-| **08** | Mock Interview                    | 60-минутное интервью по всему курсу              | [Ментор](mentor/08_INTERVIEW.md) · [Ученик](student/08_INTERVIEW.md)                     |
-
-> **Примечание:** нумерация файлов ученика может отличаться от нумерации менторских материалов; authoritative structure курса задаётся содержанием уроков и последовательностью инженерных этапов.
 
 ---
 
@@ -452,7 +432,6 @@ ANSWER
 > «Чтений намного больше записей. PostgreSQL является authoritative state. Нужен derived cache для снижения latency и DB load. Поэтому используем cache-aside с TTL. Redis outage не должен ломать correctness, поэтому read path деградирует к PostgreSQL. Проверяем hit rate, DB load и tail latency.»
 
 Это уже не знание технологии.
-
 Это инженерное решение.
 
 ---
@@ -493,19 +472,12 @@ HTTP response
 
 ```text
 Кто владеет этим состоянием?
-
 Какой здесь контракт?
-
 Какие ресурсы ограничены?
-
 Что произойдёт при timeout?
-
 Что произойдёт при duplicate?
-
 Что произойдёт при crash?
-
 Как система восстановится?
-
 Чем это доказано?
 ```
 
