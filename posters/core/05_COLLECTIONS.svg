@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1030" viewBox="0 0 1600 1030" role="img" aria-labelledby="title desc">
+<title id="title">Список по порядку. Поиск по ID.</title><desc id="desc">Сначала выбери поведение — затем структуру данных.</desc>
+<defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0 0 L10 5 L0 10 Z" fill="#69d6f5"/></marker></defs>
+<rect width="1600" height="1030" fill="#0b111b"/>
+<text x="60" y="42" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="18" font-weight="400" fill="#69d6f5">GO BACKEND COMBAT  /  ПРАКТИЧЕСКИЙ МАРШРУТ</text>
+<text x="60" y="99" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="38" font-weight="700" fill="#eef5ff">Список по порядку. Поиск по ID.</text>
+<text x="60" y="143" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">Сначала выбери поведение — затем структуру данных.</text>
+<path d="M60 165 H1540" stroke="#34455b"/>
+<rect x="60" y="220" width="460" height="310" rx="18" fill="#142030" stroke="#34455b" stroke-width="2"/>
+<rect x="60" y="242" width="5" height="32" rx="2" fill="#69d6f5"/>
+<text x="83" y="268" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="25" font-weight="700" fill="#69d6f5">Срез: очередь дел</text>
+<text x="83" y="308" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">[0] Чай — 10 минут</text>
+<text x="83" y="341" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">[1] Прогулка — 30 минут</text>
+<text x="83" y="374" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">[2] Go — 25 минут</text>
+<text x="83" y="407" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">len — длина; cap — запас.</text>
+<text x="83" y="440" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">append возвращает новый срез.</text>
+<rect x="570" y="220" width="460" height="310" rx="18" fill="#142030" stroke="#34455b" stroke-width="2"/>
+<rect x="570" y="242" width="5" height="32" rx="2" fill="#ffbf69"/>
+<text x="593" y="268" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="25" font-weight="700" fill="#ffbf69">Map: ID → значение</text>
+<text x="593" y="308" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">a → Чай</text>
+<text x="593" y="341" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">b → Прогулка</text>
+<text x="593" y="374" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">title, found := tasks[id]</text>
+<text x="593" y="407" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">Отсутствие ≠ пустая строка.</text>
+<text x="593" y="440" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">Порядок обхода не обещан.</text>
+<rect x="1080" y="220" width="460" height="310" rx="18" fill="#142030" stroke="#34455b" stroke-width="2"/>
+<rect x="1080" y="242" width="5" height="32" rx="2" fill="#8ee3b4"/>
+<text x="1103" y="268" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="25" font-weight="700" fill="#8ee3b4">Операция: договор</text>
+<text x="1103" y="308" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">Create: ID свободен.</text>
+<text x="1103" y="341" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">Read: нашли или отказали.</text>
+<text x="1103" y="374" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">Update: ID уже существует.</text>
+<text x="1103" y="407" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">Delete: удаляем только этот ID.</text>
+<text x="1103" y="440" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">Проверка — перед записью.</text>
+<path d="M525 375 H557" fill="none" stroke="#69d6f5" stroke-width="3" marker-end="url(#arrow)"/>
+<path d="M1035 375 H1067" fill="none" stroke="#69d6f5" stroke-width="3" marker-end="url(#arrow)"/>
+<rect x="60" y="625" width="720" height="280" rx="18" fill="#142030" stroke="#34455b" stroke-width="2"/>
+<rect x="60" y="647" width="5" height="32" rx="2" fill="#ffbf69"/>
+<text x="83" y="673" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="25" font-weight="700" fill="#ffbf69">Инвариант отказа</text>
+<text x="83" y="713" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">Повторный ID не затирает старую задачу.</text>
+<text x="83" y="746" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">Неизвестный ID не создаётся через Update.</text>
+<text x="83" y="779" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">Проверяем состояние до и после вызова.</text>
+<rect x="820" y="625" width="720" height="280" rx="18" fill="#142030" stroke="#34455b" stroke-width="2"/>
+<rect x="820" y="647" width="5" height="32" rx="2" fill="#8ee3b4"/>
+<text x="843" y="673" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="25" font-weight="700" fill="#8ee3b4">Цена выбранного алгоритма</text>
+<text x="843" y="713" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">Бюджет 50; длительности 40, 25, 25.</text>
+<text x="843" y="746" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">Выбор по порядку даст 40, а не 25 + 25.</text>
+<text x="843" y="779" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">Обещаем порядок, не оптимальный набор.</text>
+<path d="M60 957 H1540" stroke="#34455b"/>
+<text x="60" y="996" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="20" font-weight="400" fill="#b9c8dc">Нужен стабильный вывод? Собери ключи в срез → отсортируй → прочитай значения map.</text>
+</svg>

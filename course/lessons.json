@@ -1,0 +1,609 @@
+[
+  {
+    "n": 1,
+    "slug": "FIRST_PROGRAM",
+    "title": "А что вообще такое программирование?",
+    "prerequisite": 0,
+    "duration_minutes": 50,
+    "reserve_minutes": 10,
+    "homework_hours": "1,5–2,5",
+    "star_required": false,
+    "questions": [
+      1,
+      3,
+      4
+    ],
+    "terms": [
+      "программа",
+      "алгоритм",
+      "исходный код",
+      "компилятор",
+      "требование",
+      "ТЗ",
+      "инвариант",
+      "отладка"
+    ],
+    "poster": "posters/core/01_ENGINEERING_LOOP.svg"
+  },
+  {
+    "n": 2,
+    "slug": "VALUES",
+    "title": "Где программа держит значения?",
+    "prerequisite": 1,
+    "duration_minutes": 50,
+    "reserve_minutes": 10,
+    "homework_hours": "2–3",
+    "star_required": false,
+    "questions": [
+      5,
+      7,
+      9
+    ],
+    "terms": [
+      "переменная",
+      "тип",
+      "string",
+      "int",
+      "bool",
+      "единица измерения",
+      "нулевое значение",
+      "область видимости"
+    ],
+    "poster": "posters/core/02_VALUES.svg"
+  },
+  {
+    "n": 3,
+    "slug": "DECISIONS",
+    "title": "Как программа выбирает и повторяет?",
+    "prerequisite": 2,
+    "duration_minutes": 50,
+    "reserve_minutes": 10,
+    "homework_hours": "2–4",
+    "star_required": false,
+    "questions": [
+      5,
+      8,
+      9
+    ],
+    "terms": [
+      "условие",
+      "if",
+      "цикл",
+      "for",
+      "защитная проверка",
+      "граничный случай",
+      "таблица решений"
+    ],
+    "poster": "posters/core/03_DECISIONS.svg"
+  },
+  {
+    "n": 4,
+    "slug": "FUNCTIONS",
+    "title": "Как разложить задачу на маленькие шаги?",
+    "prerequisite": 3,
+    "duration_minutes": 50,
+    "reserve_minutes": 10,
+    "homework_hours": "3–4",
+    "star_required": false,
+    "questions": [
+      30,
+      5
+    ],
+    "terms": [
+      "функция",
+      "параметр",
+      "аргумент",
+      "return",
+      "контракт",
+      "предусловие",
+      "постусловие",
+      "побочный эффект",
+      "декомпозиция"
+    ],
+    "poster": "posters/core/04_FUNCTIONS.svg"
+  },
+  {
+    "n": 5,
+    "slug": "COLLECTIONS",
+    "title": "Одно дело запомнили. А десять?",
+    "prerequisite": 4,
+    "duration_minutes": 50,
+    "reserve_minutes": 10,
+    "homework_hours": "3–4",
+    "star_required": false,
+    "questions": [
+      22,
+      23,
+      25,
+      27,
+      28,
+      29
+    ],
+    "terms": [
+      "срез",
+      "map",
+      "ключ",
+      "CRUD"
+    ],
+    "poster": "posters/core/05_COLLECTIONS.svg"
+  },
+  {
+    "n": 6,
+    "slug": "TASK_MODEL",
+    "title": "Что мы знаем об одной задаче?",
+    "prerequisite": 5,
+    "duration_minutes": 50,
+    "reserve_minutes": 10,
+    "homework_hours": "3–4",
+    "star_required": false,
+    "questions": [
+      13,
+      14,
+      15,
+      16,
+      17,
+      18
+    ],
+    "terms": [
+      "struct",
+      "метод",
+      "указатель",
+      "копирование"
+    ],
+    "poster": "posters/core/06_TASK_MODEL.svg"
+  },
+  {
+    "n": 7,
+    "slug": "ERRORS",
+    "title": "Что делать, когда что-то пошло не так?",
+    "prerequisite": 6,
+    "duration_minutes": 50,
+    "reserve_minutes": 10,
+    "homework_hours": "3–4",
+    "star_required": false,
+    "questions": [
+      31,
+      47,
+      48,
+      49
+    ],
+    "terms": [
+      "error",
+      "nil",
+      "валидация",
+      "errors.Is"
+    ],
+    "poster": "posters/core/07_ERRORS.svg"
+  },
+  {
+    "n": 8,
+    "slug": "TESTS",
+    "title": "Исправили одно. Как проверить остальное?",
+    "prerequisite": 7,
+    "duration_minutes": 50,
+    "reserve_minutes": 10,
+    "homework_hours": "3–5",
+    "star_required": false,
+    "questions": [
+      61,
+      62,
+      63,
+      64,
+      65
+    ],
+    "terms": [
+      "тест",
+      "регрессия",
+      "табличный тест",
+      "CI"
+    ],
+    "poster": "posters/core/08_TESTS.svg"
+  },
+  {
+    "n": 9,
+    "slug": "ENVIRONMENT",
+    "title": "На моей машине работает. А на твоей?",
+    "prerequisite": 8,
+    "duration_minutes": 50,
+    "reserve_minutes": 10,
+    "homework_hours": "3–5",
+    "star_required": false,
+    "questions": [
+      1,
+      2,
+      35,
+      36
+    ],
+    "terms": [
+      "образ",
+      "контейнер",
+      "Dockerfile",
+      "Docker Compose",
+      "volume",
+      "порт",
+      "healthcheck"
+    ],
+    "poster": "posters/core/09_ENVIRONMENT.svg"
+  },
+  {
+    "n": 10,
+    "slug": "HTTP",
+    "title": "Как одна программа обращается к другой?",
+    "prerequisite": 9,
+    "duration_minutes": 50,
+    "reserve_minutes": 10,
+    "homework_hours": "2–3",
+    "star_required": false,
+    "questions": [
+      401,
+      413,
+      418
+    ],
+    "terms": [
+      "клиент",
+      "сервер",
+      "HTTP",
+      "метод",
+      "маршрут",
+      "заголовок",
+      "тело",
+      "query string"
+    ],
+    "poster": "posters/core/10_HTTP.svg"
+  },
+  {
+    "n": 11,
+    "slug": "API",
+    "title": "Как дать человеку пользоваться нашим сервисом?",
+    "prerequisite": 10,
+    "duration_minutes": 50,
+    "reserve_minutes": 10,
+    "homework_hours": "4–6",
+    "star_required": false,
+    "questions": [
+      404,
+      407,
+      408,
+      409,
+      410,
+      411
+    ],
+    "terms": [
+      "API",
+      "JSON",
+      "DTO",
+      "код ответа",
+      "TaskService",
+      "граница транспорта"
+    ],
+    "poster": "posters/core/11_API.svg"
+  },
+  {
+    "n": 12,
+    "slug": "SQL",
+    "title": "Закрыли программу. Куда делись данные?",
+    "prerequisite": 11,
+    "duration_minutes": 50,
+    "reserve_minutes": 10,
+    "homework_hours": "3–5",
+    "star_required": false,
+    "questions": [
+      171,
+      172,
+      174,
+      175,
+      176
+    ],
+    "terms": [
+      "таблица",
+      "SQL",
+      "PRIMARY KEY",
+      "NOT NULL",
+      "CHECK",
+      "NULL",
+      "ORDER BY",
+      "RETURNING"
+    ],
+    "poster": "posters/core/12_SQL.svg"
+  },
+  {
+    "n": 13,
+    "slug": "RELATIONS",
+    "title": "Как связать данные и не запутаться?",
+    "prerequisite": 12,
+    "duration_minutes": 50,
+    "reserve_minutes": 10,
+    "homework_hours": "3–5",
+    "star_required": false,
+    "questions": [
+      173,
+      177,
+      178,
+      179,
+      182
+    ],
+    "terms": [
+      "FOREIGN KEY",
+      "JOIN",
+      "LEFT JOIN",
+      "NULL",
+      "кардинальность",
+      "GROUP BY",
+      "CASCADE"
+    ],
+    "poster": "posters/core/13_RELATIONS.svg"
+  },
+  {
+    "n": 14,
+    "slug": "POSTGRES",
+    "title": "Как Go разговаривает с базой?",
+    "prerequisite": 13,
+    "duration_minutes": 50,
+    "reserve_minutes": 10,
+    "homework_hours": "4–6",
+    "star_required": false,
+    "questions": [
+      261,
+      262,
+      271,
+      272,
+      291,
+      292
+    ],
+    "terms": [
+      "pgxpool/v5",
+      "пул соединений",
+      "Ping",
+      "параметр запроса",
+      "go:embed",
+      "goose/v3",
+      "миграция",
+      "advisory lock"
+    ],
+    "poster": "posters/core/14_POSTGRES.svg"
+  },
+  {
+    "n": 15,
+    "slug": "INTERFACES",
+    "title": "Как заменить инструмент и сохранить правила?",
+    "prerequisite": 14,
+    "duration_minutes": 50,
+    "reserve_minutes": 10,
+    "homework_hours": "3–5",
+    "star_required": false,
+    "questions": [
+      51,
+      52,
+      53,
+      54,
+      57,
+      59
+    ],
+    "terms": [
+      "интерфейс",
+      "потребитель",
+      "порт",
+      "реализация",
+      "внедрение зависимости",
+      "набор методов"
+    ],
+    "poster": "posters/core/15_INTERFACES.svg"
+  },
+  {
+    "n": 16,
+    "slug": "TRANSACTIONS",
+    "title": "Как сохранить два изменения вместе?",
+    "prerequisite": 15,
+    "duration_minutes": 50,
+    "reserve_minutes": 10,
+    "homework_hours": "4–6",
+    "star_required": false,
+    "questions": [
+      221,
+      223,
+      224,
+      251,
+      254
+    ],
+    "terms": [
+      "транзакция",
+      "COMMIT",
+      "ROLLBACK",
+      "атомарность"
+    ]
+  },
+  {
+    "n": 17,
+    "slug": "GOROUTINES",
+    "title": "Можно делать несколько дел одновременно?",
+    "prerequisite": 16,
+    "duration_minutes": 50,
+    "reserve_minutes": 10,
+    "homework_hours": "4–6",
+    "star_required": false,
+    "questions": [
+      71,
+      73,
+      74,
+      75,
+      91,
+      94
+    ],
+    "terms": [
+      "горутина",
+      "WaitGroup",
+      "гонка данных",
+      "Mutex"
+    ]
+  },
+  {
+    "n": 18,
+    "slug": "WORKERS",
+    "title": "Как распределить работу между исполнителями?",
+    "prerequisite": 17,
+    "duration_minutes": 50,
+    "reserve_minutes": 10,
+    "homework_hours": "4–6",
+    "star_required": false,
+    "questions": [
+      76,
+      78,
+      79,
+      80,
+      81,
+      83
+    ],
+    "terms": [
+      "канал",
+      "worker pool",
+      "очередь",
+      "ограничение параллелизма"
+    ]
+  },
+  {
+    "n": 19,
+    "slug": "CONTEXT",
+    "title": "Пользователь ушёл. Продолжаем работу?",
+    "prerequisite": 18,
+    "duration_minutes": 50,
+    "reserve_minutes": 10,
+    "homework_hours": "4–6",
+    "star_required": false,
+    "questions": [
+      421,
+      422,
+      423,
+      424,
+      425
+    ],
+    "terms": [
+      "context",
+      "отмена",
+      "тайм-аут",
+      "graceful shutdown"
+    ]
+  },
+  {
+    "n": 20,
+    "slug": "BACKGROUND",
+    "title": "Что происходит с задачей после отправки?",
+    "prerequisite": 19,
+    "duration_minutes": 50,
+    "reserve_minutes": 10,
+    "homework_hours": "4–6",
+    "star_required": false,
+    "questions": [
+      331,
+      332,
+      333,
+      371,
+      372,
+      376
+    ],
+    "terms": [
+      "состояние",
+      "попытка",
+      "retry",
+      "идемпотентность"
+    ]
+  },
+  {
+    "n": 21,
+    "slug": "OPERATIONS",
+    "title": "Как выпустить новую версию и спокойно её остановить?",
+    "prerequisite": 20,
+    "duration_minutes": 50,
+    "reserve_minutes": 10,
+    "homework_hours": "3–5",
+    "star_required": false,
+    "questions": [
+      476,
+      477,
+      478,
+      480,
+      481
+    ],
+    "terms": [
+      "готовность",
+      "конфигурация",
+      "slog",
+      "request ID",
+      "SIGTERM",
+      "graceful shutdown",
+      "expand/contract",
+      "rollback"
+    ],
+    "poster": "posters/core/21_OPERATIONS.svg"
+  },
+  {
+    "n": 22,
+    "slug": "QUERY_PLAN",
+    "title": "Почему запрос стал медленным?",
+    "prerequisite": 21,
+    "duration_minutes": 50,
+    "reserve_minutes": 10,
+    "homework_hours": "4–6",
+    "star_required": false,
+    "questions": [
+      201,
+      202,
+      203,
+      204,
+      205
+    ],
+    "terms": [
+      "индекс",
+      "EXPLAIN",
+      "план запроса",
+      "измерение"
+    ]
+  },
+  {
+    "n": 23,
+    "slug": "JOB_SEARCH",
+    "title": "Как показать работодателю, что я умею?",
+    "prerequisite": 22,
+    "duration_minutes": 50,
+    "reserve_minutes": 10,
+    "homework_hours": "4–6",
+    "star_required": false,
+    "questions": [
+      61,
+      64,
+      294,
+      401,
+      431
+    ],
+    "terms": [
+      "портфолио",
+      "резюме",
+      "история решения",
+      "вакансия"
+    ]
+  },
+  {
+    "n": 24,
+    "slug": "INTERVIEW",
+    "title": "Собеседование: собираем всё вместе",
+    "prerequisite": 23,
+    "duration_minutes": 50,
+    "reserve_minutes": 10,
+    "homework_hours": "4–6",
+    "star_required": false,
+    "questions": [
+      4,
+      14,
+      51,
+      91,
+      172,
+      221,
+      291,
+      421
+    ],
+    "terms": [
+      "техническое интервью",
+      "уточняющий вопрос",
+      "обратная связь"
+    ]
+  }
+]

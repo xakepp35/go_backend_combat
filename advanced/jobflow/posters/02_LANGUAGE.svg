@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="420mm" height="297mm" viewBox="0 0 420 297">
+<title>02. GO LANGUAGE</title>
+<desc>Модель языка Go: types, functions, methods, interfaces, errors, testing</desc>
+<defs><style>
+.bg{fill:#0B0D10}.card{fill:#11171D;stroke:#3E4853;stroke-width:.8}.t{fill:#F3F6F8;font-family:Inter,"Segoe UI",Arial,sans-serif}.m{fill:#A2ABB5;font-family:Inter,"Segoe UI",Arial,sans-serif}.a{fill:#7DD3FC}.as{stroke:#7DD3FC;fill:none;stroke-linecap:round;stroke-linejoin:round}.r{stroke:#2A3037;stroke-width:.7}
+.title{font-size:17px;font-weight:700;letter-spacing:1.3px}.sub{font-size:4.8px;font-weight:500}.num{font-size:7px;font-weight:800}.ct{font-size:6px;font-weight:700;letter-spacing:.55px}.q{font-size:4.5px;font-weight:500}.el{font-size:3.3px;font-weight:700;letter-spacing:.7px}.e{font-size:4.05px;font-weight:500}.f{font-family:"SFMono-Regular",Consolas,"Liberation Mono",monospace;font-size:3.9px;font-weight:600}.tag{font-size:3.25px;font-weight:700;letter-spacing:.55px}
+</style><marker id="ar" markerWidth="8" markerHeight="8" refX="6.2" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0 0 8 4 0 8Z" class="a"/></marker></defs>
+<rect width="420" height="297" class="bg"/>
+
+<!-- Header -->
+<text x="18" y="27" class="t title">GO LANGUAGE</text>
+<a href="https://github.com/xakepp35/go_backend_combat"><text x="402" y="27" text-anchor="end" class="t sub">github.com/xakepp35/go_backend_combat</text></a>
+<text x="18" y="36" class="m sub">Простые примитивы → явное поведение → композиция.</text>
+<line x1="18" y1="44" x2="402" y2="44" class="r"/>
+
+<!-- Flow: 1 → 2 → 3 ↘ 4 → 5 → 6 -->
+<path d="M134 106H152" class="as" stroke-width="1.9" marker-end="url(#ar)"/>
+<path d="M268 106H286" class="as" stroke-width="1.9" marker-end="url(#ar)"/>
+<path d="M344 162V168H76V174" class="as" stroke-width="1.9" marker-end="url(#ar)"/>
+<path d="M134 229H152" class="as" stroke-width="1.9" marker-end="url(#ar)"/>
+<path d="M268 229H286" class="as" stroke-width="1.9" marker-end="url(#ar)"/>
+
+<!-- 1 TYPES -->
+<g><rect x="18" y="51" width="116" height="111" rx="2" class="card"/>
+<text x="26" y="66" class="a num">01.</text><text x="39" y="66" class="t ct">TYPES</text>
+<line x1="26" y1="73" x2="126" y2="73" class="r"/>
+<text x="26" y="88" class="m q">Как выразить состояние данных?</text>
+<text x="26" y="101" class="a ct">GO</text>
+<text x="26" y="112" class="m f">struct  slice  map</text>
+<text x="26" y="119" class="m f">array   pointer</text>
+<text x="26" y="132" class="m e">Новый тип делает модель состояния</text>
+<text x="26" y="139" class="m e">явной и проверяемой compiler.</text>
+<text x="26" y="153" class="a tag">ZERO VALUE</text>
+<text x="26" y="159" class="m e">Тип имеет предсказуемое начальное значение.</text></g>
+
+<!-- 2 FUNCTIONS -->
+<g><rect x="152" y="51" width="116" height="111" rx="2" class="card"/>
+<text x="160" y="66" class="a num">02.</text><text x="173" y="66" class="t ct">FUNCTIONS</text>
+<line x1="160" y1="73" x2="260" y2="73" class="r"/>
+<text x="160" y="88" class="m q">Как выразить действие и его результат?</text>
+<text x="160" y="101" class="a ct">GO</text>
+<text x="160" y="113" class="m f">func Create(T) (R, error)</text>
+<text x="160" y="127" class="m e">Вход, результат и ошибка</text>
+<text x="160" y="134" class="m e">видны прямо в контракте.</text>
+<text x="160" y="148" class="a tag">ЯВНО</text>
+<text x="160" y="157" class="m e">Статическая типизация + type inference.</text></g>
+
+<!-- 3 METHODS -->
+<g><rect x="286" y="51" width="116" height="111" rx="2" class="card"/>
+<text x="294" y="66" class="a num">03.</text><text x="307" y="66" class="t ct">METHODS</text>
+<line x1="294" y1="73" x2="394" y2="73" class="r"/>
+<text x="294" y="88" class="m q">Где живёт поведение типа?</text>
+<text x="294" y="101" class="a ct">GO</text>
+<text x="294" y="113" class="m f">func (j *Job) Complete()</text>
+<text x="294" y="127" class="m e">Value receiver → работа с копией.</text>
+<text x="294" y="134" class="m e">Pointer receiver → изменение state.</text>
+<text x="294" y="148" class="a tag">COMPOSITION</text>
+<text x="294" y="157" class="m e">Поведение собирается из типов и методов.</text></g>
+
+<!-- 4 INTERFACES -->
+<g><rect x="18" y="174" width="116" height="111" rx="2" class="card"/>
+<text x="26" y="189" class="a num">04.</text><text x="39" y="189" class="t ct">INTERFACES</text>
+<line x1="26" y1="196" x2="126" y2="196" class="r"/>
+<text x="26" y="211" class="m q">От чего должен зависеть потребитель?</text>
+<text x="26" y="224" class="a ct">GO</text>
+<text x="26" y="234" class="m f">type Repository interface {</text>
+<text x="26" y="241" class="m f">  Get(string) (Job, error)</text>
+<text x="26" y="248" class="m f">}</text>
+<text x="26" y="261" class="a tag">КОНТРАКТ</text>
+<text x="26" y="271" class="m e">Interface описывает нужное поведение.</text>
+<text x="26" y="278" class="m e">Реализация удовлетворяет его неявно.</text></g>
+
+<!-- 5 ERRORS -->
+<g><rect x="152" y="174" width="116" height="111" rx="2" class="card"/>
+<text x="160" y="189" class="a num">05.</text><text x="173" y="189" class="t ct">ERRORS</text>
+<line x1="160" y1="196" x2="260" y2="196" class="r"/>
+<text x="160" y="211" class="m q">Как выразить неуспешный результат?</text>
+<text x="160" y="224" class="a ct">GO</text>
+<text x="160" y="235" class="m f">if err != nil { return err }</text>
+<text x="160" y="247" class="m f">fmt.Errorf("get job: %w", err)</text>
+<text x="160" y="261" class="a tag">КОНТЕКСТ + IDENTITY</text>
+<text x="160" y="271" class="m e">Текст объясняет. errors.Is / As</text>
+<text x="160" y="278" class="m e">позволяют программе принять решение.</text></g>
+
+<!-- 6 TESTING -->
+<g><rect x="286" y="174" width="116" height="111" rx="2" class="card"/>
+<text x="294" y="189" class="a num">06.</text><text x="307" y="189" class="t ct">TESTING</text>
+<line x1="294" y1="196" x2="394" y2="196" class="r"/>
+<text x="294" y="211" class="m q">Как доказать ожидаемое поведение?</text>
+<text x="294" y="224" class="a ct">GO</text>
+<text x="294" y="235" class="m f">go test ./...</text>
+<text x="294" y="245" class="m f">t.Run(...)
+</text>
+<text x="294" y="258" class="a tag">EVIDENCE</text>
+<text x="294" y="268" class="m e">Тест фиксирует контракт.</text>
+<text x="294" y="275" class="m e">Compiler + tests → проверяемое поведение.</text></g>
+</svg>

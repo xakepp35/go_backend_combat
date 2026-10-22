@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1120" viewBox="0 0 1600 1120" role="img" aria-labelledby="title desc">
+<title id="title">Git: сохрани намерение, разберись в состоянии</title><desc id="desc">Ветка — указатель на коммит. Конфликт — вопрос о смысле объединённого изменения.</desc>
+<defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0 0 L10 5 L0 10 Z" fill="#69d6f5"/></marker></defs>
+<rect width="1600" height="1120" fill="#0b111b"/>
+<text x="60" y="42" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="18" font-weight="400" fill="#69d6f5">GO BACKEND COMBAT  /  ПЕРВАЯ ЧАСТЬ</text>
+<text x="60" y="99" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="38" font-weight="700" fill="#eef5ff">Git: сохрани намерение, разберись в состоянии</text>
+<text x="60" y="143" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">Ветка — указатель на коммит. Конфликт — вопрос о смысле объединённого изменения.</text>
+<path d="M60 165 H1540" stroke="#34455b"/>
+<rect x="60" y="215" width="420" height="170" rx="18" fill="#142030" stroke="#34455b" stroke-width="2"/>
+<rect x="60" y="237" width="5" height="32" rx="2" fill="#69d6f5"/>
+<text x="83" y="263" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="25" font-weight="700" fill="#69d6f5">Рабочая папка</text>
+<text x="83" y="303" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">Редактируем файлы.</text>
+<text x="83" y="336" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">git diff</text>
+<rect x="590" y="215" width="420" height="170" rx="18" fill="#142030" stroke="#34455b" stroke-width="2"/>
+<rect x="590" y="237" width="5" height="32" rx="2" fill="#69d6f5"/>
+<text x="613" y="263" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="25" font-weight="700" fill="#69d6f5">Индекс</text>
+<text x="613" y="303" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">Выбираем будущий снимок.</text>
+<text x="613" y="336" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">git diff --cached</text>
+<rect x="1120" y="215" width="420" height="170" rx="18" fill="#142030" stroke="#34455b" stroke-width="2"/>
+<rect x="1120" y="237" width="5" height="32" rx="2" fill="#69d6f5"/>
+<text x="1143" y="263" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="25" font-weight="700" fill="#69d6f5">Коммит</text>
+<text x="1143" y="303" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">Сохраняем снимок и смысл.</text>
+<text x="1143" y="336" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">git log / git show</text>
+<path d="M485 300 H578" fill="none" stroke="#69d6f5" stroke-width="3" marker-end="url(#arrow)"/>
+<text x="532" y="274" text-anchor="middle" font-family="DejaVu Sans,sans-serif" font-size="21" font-weight="400" fill="#69d6f5">add</text>
+<path d="M1015 300 H1108" fill="none" stroke="#69d6f5" stroke-width="3" marker-end="url(#arrow)"/>
+<text x="1065" y="274" text-anchor="middle" font-family="DejaVu Sans,sans-serif" font-size="21" font-weight="400" fill="#69d6f5">commit</text>
+<rect x="60" y="465" width="700" height="285" rx="18" fill="#142030" stroke="#34455b" stroke-width="2"/>
+<rect x="60" y="487" width="5" height="32" rx="2" fill="#69d6f5"/>
+<text x="83" y="513" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="25" font-weight="700" fill="#69d6f5">Fast-forward</text>
+<text x="83" y="553" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">main была предком feature.</text>
+<text x="83" y="586" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">Перемещаем указатель, нового merge-коммита нет.</text>
+<rect x="820" y="465" width="720" height="285" rx="18" fill="#142030" stroke="#34455b" stroke-width="2"/>
+<rect x="820" y="487" width="5" height="32" rx="2" fill="#ffbf69"/>
+<text x="843" y="513" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="25" font-weight="700" fill="#ffbf69">Трёхсторонний merge</text>
+<text x="843" y="553" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">После общего предка менялись обе ветки.</text>
+<text x="843" y="586" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">Новый коммит объединяет две истории.</text>
+<path d="M165 660 H620" fill="none" stroke="#69d6f5" stroke-width="3" marker-end="url(#arrow)"/>
+<circle cx="180" cy="660" r="13" fill="#8ee3b4"/>
+<text x="180" y="703" text-anchor="middle" font-family="DejaVu Sans,sans-serif" font-size="20" font-weight="400" fill="#b9c8dc">A</text>
+<circle cx="370" cy="660" r="13" fill="#8ee3b4"/>
+<text x="370" y="703" text-anchor="middle" font-family="DejaVu Sans,sans-serif" font-size="20" font-weight="400" fill="#b9c8dc">B</text>
+<circle cx="590" cy="660" r="13" fill="#8ee3b4"/>
+<text x="590" y="703" text-anchor="middle" font-family="DejaVu Sans,sans-serif" font-size="20" font-weight="400" fill="#b9c8dc">C</text>
+<text x="460" y="635" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="20" font-weight="400" fill="#69d6f5">main → feature</text>
+<text x="90" y="735" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="20" font-weight="400" fill="#b9c8dc">До: main=A, feature=C. После: обе на C.</text>
+<path d="M910 660 L1070 615 L1280 660 H1460" fill="none" stroke="#69d6f5" stroke-width="3" marker-end="url(#arrow)"/>
+<path d="M910 660 L1070 705 L1280 660" fill="none" stroke="#69d6f5" stroke-width="3" marker-end="url(#arrow)"/>
+<circle cx="920" cy="660" r="13" fill="#8ee3b4"/>
+<text x="920" y="703" text-anchor="middle" font-family="DejaVu Sans,sans-serif" font-size="20" font-weight="400" fill="#b9c8dc">A</text>
+<circle cx="1070" cy="615" r="13" fill="#8ee3b4"/>
+<text x="1070" y="658" text-anchor="middle" font-family="DejaVu Sans,sans-serif" font-size="20" font-weight="400" fill="#b9c8dc">B</text>
+<circle cx="1070" cy="705" r="13" fill="#8ee3b4"/>
+<text x="1070" y="748" text-anchor="middle" font-family="DejaVu Sans,sans-serif" font-size="20" font-weight="400" fill="#b9c8dc">C</text>
+<circle cx="1300" cy="660" r="13" fill="#8ee3b4"/>
+<text x="1300" y="703" text-anchor="middle" font-family="DejaVu Sans,sans-serif" font-size="20" font-weight="400" fill="#b9c8dc">M</text>
+<rect x="60" y="810" width="700" height="175" rx="18" fill="#142030" stroke="#34455b" stroke-width="2"/>
+<rect x="60" y="832" width="5" height="32" rx="2" fill="#ffbf69"/>
+<text x="83" y="858" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="25" font-weight="700" fill="#ffbf69">Перед reset --hard</text>
+<text x="83" y="898" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">Узнай состояние: status, diff, log.</text>
+<text x="83" y="931" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">Нужное сохрани коммитом или stash.</text>
+<text x="83" y="964" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">Reflog не хранит несохранённые правки.</text>
+<rect x="820" y="810" width="720" height="175" rx="18" fill="#142030" stroke="#34455b" stroke-width="2"/>
+<rect x="820" y="832" width="5" height="32" rx="2" fill="#8ee3b4"/>
+<text x="843" y="858" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="25" font-weight="700" fill="#8ee3b4">Перед commit --amend</text>
+<text x="843" y="898" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">Локальный коммит: уточняем до публикации.</text>
+<text x="843" y="931" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">Общую историю не переписываем.</text>
+<text x="843" y="964" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">Исправляем новым коммитом.</text>
+<path d="M60 1047 H1540" stroke="#34455b"/>
+<text x="60" y="1086" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="20" font-weight="400" fill="#b9c8dc">reset меняет состояние. amend заменяет коммит. revert создаёт обратное изменение. Сначала выбери намерение.</text>
+</svg>

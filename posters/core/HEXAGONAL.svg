@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1130" viewBox="0 0 1600 1130" role="img" aria-labelledby="title desc">
+<title id="title">Меняем инструмент, сохраняем правила</title><desc id="desc">Путь вызова и направление импортов — две разные карты.</desc>
+<defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0 0 L10 5 L0 10 Z" fill="#69d6f5"/></marker></defs>
+<rect width="1600" height="1130" fill="#0b111b"/>
+<text x="60" y="42" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="18" font-weight="400" fill="#69d6f5">GO BACKEND COMBAT  /  ПЕРВАЯ ЧАСТЬ</text>
+<text x="60" y="99" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="38" font-weight="700" fill="#eef5ff">Меняем инструмент, сохраняем правила</text>
+<text x="60" y="143" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">Путь вызова и направление импортов — две разные карты.</text>
+<path d="M60 165 H1540" stroke="#34455b"/>
+<rect x="60" y="235" width="420" height="230" rx="18" fill="#142030" stroke="#34455b" stroke-width="2"/>
+<rect x="60" y="257" width="5" height="32" rx="2" fill="#69d6f5"/>
+<text x="83" y="283" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="25" font-weight="700" fill="#69d6f5">Входной адаптер: api</text>
+<text x="83" y="323" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">HTTP → req → вызов → res</text>
+<text x="83" y="356" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">New(service pkg.TaskService)</text>
+<text x="83" y="389" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">Не импортирует app.</text>
+<rect x="590" y="235" width="420" height="230" rx="18" fill="#142030" stroke="#34455b" stroke-width="2"/>
+<rect x="590" y="257" width="5" height="32" rx="2" fill="#ffbf69"/>
+<text x="613" y="283" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="25" font-weight="700" fill="#ffbf69">Сценарий: app</text>
+<text x="613" y="323" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">Проверяет Task.Validate.</text>
+<text x="613" y="356" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">Зависит от TaskRepository.</text>
+<text x="613" y="389" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">Не знает memory и SQL.</text>
+<rect x="1120" y="235" width="420" height="230" rx="18" fill="#142030" stroke="#34455b" stroke-width="2"/>
+<rect x="1120" y="257" width="5" height="32" rx="2" fill="#8ee3b4"/>
+<text x="1143" y="283" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="25" font-weight="700" fill="#8ee3b4">Выходной адаптер</text>
+<text x="1143" y="323" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">memory / будущий postgres</text>
+<text x="1143" y="356" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">Выполняет порт хранилища.</text>
+<text x="1143" y="389" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">Уникальность ID — атомарно.</text>
+<path d="M485 350 H578" fill="none" stroke="#69d6f5" stroke-width="3" marker-end="url(#arrow)"/>
+<path d="M1015 350 H1108" fill="none" stroke="#69d6f5" stroke-width="3" marker-end="url(#arrow)"/>
+<text x="800" y="515" text-anchor="middle" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="700" fill="#69d6f5">ВЫЗОВЫ: вход → сервис → реализация хранилища</text>
+<rect x="480" y="645" width="640" height="200" rx="18" fill="#142030" stroke="#34455b" stroke-width="2"/>
+<rect x="480" y="667" width="5" height="32" rx="2" fill="#69d6f5"/>
+<text x="503" y="693" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="25" font-weight="700" fill="#69d6f5">pkg: единый публичный договор</text>
+<text x="503" y="733" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">Типы, константы, ошибки, request / response.</text>
+<text x="503" y="766" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">service.go — входной интерфейс.</text>
+<text x="503" y="799" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">ports.go — выходной порт репозитория.</text>
+<path d="M270 470 V745 H465" fill="none" stroke="#69d6f5" stroke-width="3" marker-end="url(#arrow)"/>
+<path d="M800 550 V632" fill="none" stroke="#69d6f5" stroke-width="3" marker-end="url(#arrow)"/>
+<path d="M1330 470 V745 H1135" fill="none" stroke="#69d6f5" stroke-width="3" marker-end="url(#arrow)"/>
+<text x="245" y="610" text-anchor="end" font-family="DejaVu Sans,sans-serif" font-size="21" font-weight="400" fill="#b9c8dc">импорт pkg</text>
+<text x="1355" y="610" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="21" font-weight="400" fill="#b9c8dc">импорт pkg</text>
+<rect x="60" y="910" width="1480" height="110" rx="18" fill="#142030" stroke="#34455b" stroke-width="2"/>
+<rect x="60" y="932" width="5" height="32" rx="2" fill="#69d6f5"/>
+<text x="83" y="958" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="25" font-weight="700" fill="#69d6f5">cmd/jobflow/main.go соединяет конкретные части</text>
+<text x="800" y="996" text-anchor="middle" font-family="DejaVu Sans Mono,sans-serif" font-size="21" font-weight="400" fill="#b9c8dc">store := memory.New()    service := app.New(store)    handler := api.New(service)</text>
+<path d="M60 1057 H1540" stroke="#34455b"/>
+<text x="60" y="1096" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="20" font-weight="400" fill="#b9c8dc">pkg — конвенция курса; internal ограничивает импорт. Для gRPC нужны .proto и отдельный входной адаптер.</text>
+</svg>

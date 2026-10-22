@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="420mm" height="297mm" viewBox="0 0 420 297">
+<title>04A. SOLID</title>
+<desc>Пять принципов SOLID с точными формулировками и примерами применения в Go.</desc>
+<defs><style>
+.bg{fill:#0B0D10}.card{fill:#11171D;stroke:#3E4853;stroke-width:.8}.t{fill:#F3F6F8;font-family:Inter,"Segoe UI",Arial,sans-serif}.m{fill:#A2ABB5;font-family:Inter,"Segoe UI",Arial,sans-serif}.a{fill:#7DD3FC}.r{stroke:#2A3037;stroke-width:.7}
+.title{font-size:17px;font-weight:700;letter-spacing:1.3px}.sub{font-size:4.75px;font-weight:500}.num{font-size:7px;font-weight:800}.ct{font-size:5.75px;font-weight:700;letter-spacing:.45px}.q{font-size:4.05px;font-weight:500}.e{font-size:3.65px;font-weight:500}.f{font-family:"SFMono-Regular",Consolas,"Liberation Mono",monospace;font-size:3.4px;font-weight:600}.tag{font-size:3px;font-weight:700;letter-spacing:.45px}.big{font-size:8.6px;font-weight:800}
+</style></defs>
+<rect width="420" height="297" class="bg"/>
+
+<!-- Header -->
+<text x="18" y="27" class="t title">SOLID</text>
+<a href="https://github.com/xakepp35/go_backend_combat"><text x="402" y="27" text-anchor="end" class="m sub">github.com/xakepp35/go_backend_combat</text></a>
+<text x="18" y="36" class="m sub">Пять принципов проектирования: ответственность, расширение, подстановка, контракты и зависимости.</text>
+<line x1="18" y1="44" x2="402" y2="44" class="r"/>
+
+<!-- 1 S -->
+<g><rect x="18" y="51" width="116" height="111" rx="2" class="card"/>
+<text x="26" y="67" class="a num">01.</text><text x="39" y="67" class="a big">S</text><text x="52" y="67" class="t ct">SINGLE RESPONSIBILITY</text>
+<line x1="26" y1="74" x2="126" y2="74" class="r"/>
+<text x="26" y="88" class="m q">Что должно быть причиной изменения?</text>
+<text x="26" y="101" class="a tag">SRP</text>
+<text x="26" y="112" class="t e">Одна ось ответственности —</text>
+<text x="26" y="118" class="t e">одна причина для изменения.</text>
+<text x="26" y="131" class="a tag">GO</text>
+<text x="26" y="141" class="m f">JobService → business rules</text>
+<text x="26" y="148" class="m f">Repository → storage detail</text>
+<text x="26" y="158" class="m e">Не смешивай политики и детали одной ответственности.</text></g>
+
+<!-- 2 O -->
+<g><rect x="152" y="51" width="116" height="111" rx="2" class="card"/>
+<text x="160" y="67" class="a num">02.</text><text x="173" y="67" class="a big">O</text><text x="186" y="67" class="t ct">OPEN / CLOSED</text>
+<line x1="160" y1="74" x2="260" y2="74" class="r"/>
+<text x="160" y="88" class="m q">Как добавить поведение без постоянного переписывания ядра?</text>
+<text x="160" y="101" class="a tag">OCP</text>
+<text x="160" y="112" class="t e">Стабильную политику расширяй новыми</text>
+<text x="160" y="118" class="t e">реализациями, минимизируя изменения ядра.</text>
+<text x="160" y="131" class="a tag">GO</text>
+<text x="160" y="141" class="m f">Processor</text>
+<text x="160" y="148" class="m f">EmailProcessor · WebhookProcessor</text>
+<text x="160" y="158" class="m e">OCP ≠ «код нельзя менять».</text></g>
+
+<!-- 3 L -->
+<g><rect x="286" y="51" width="116" height="111" rx="2" class="card"/>
+<text x="294" y="67" class="a num">03.</text><text x="307" y="67" class="a big">L</text><text x="320" y="67" class="t ct">LISKOV SUBSTITUTION</text>
+<line x1="294" y1="74" x2="394" y2="74" class="r"/>
+<text x="294" y="88" class="m q">Можно ли заменить реализацию без нарушения ожиданий?</text>
+<text x="294" y="101" class="a tag">LSP</text>
+<text x="294" y="112" class="t e">Подстановка реализации не должна</text>
+<text x="294" y="118" class="t e">нарушать контракт потребителя.</text>
+<text x="294" y="131" class="a tag">GO</text>
+<text x="294" y="141" class="m f">MemoryRepo · PostgresRepo</text>
+<text x="294" y="148" class="m f">Get(missing) → ErrJobNotFound</text>
+<text x="294" y="158" class="m e">Обе реализации сохраняют ожидаемую семантику.</text></g>
+
+<!-- 4 I -->
+<g><rect x="18" y="174" width="116" height="111" rx="2" class="card"/>
+<text x="26" y="190" class="a num">04.</text><text x="39" y="190" class="a big">I</text><text x="52" y="190" class="t ct">INTERFACE SEGREGATION</text>
+<line x1="26" y1="197" x2="126" y2="197" class="r"/>
+<text x="26" y="211" class="m q">Почему потребитель должен зависеть от ненужных методов?</text>
+<text x="26" y="224" class="a tag">ISP</text>
+<text x="26" y="235" class="t e">Разделяй контракты по потребителям.</text>
+<text x="26" y="241" class="t e">Зависимость содержит только нужное поведение.</text>
+<text x="26" y="254" class="a tag">GO</text>
+<text x="26" y="264" class="m f">type JobGetter interface {</text>
+<text x="26" y="271" class="m f">Get(id string) (Job, error)</text>
+<text x="26" y="278" class="m f">}</text></g>
+
+<!-- 5 D -->
+<g><rect x="152" y="174" width="116" height="111" rx="2" class="card"/>
+<text x="160" y="190" class="a num">05.</text><text x="173" y="190" class="a big">D</text><text x="186" y="190" class="t ct">DEPENDENCY INVERSION</text>
+<line x1="160" y1="197" x2="260" y2="197" class="r"/>
+<text x="160" y="211" class="m q">От чего должна зависеть бизнес-логика?</text>
+<text x="160" y="224" class="a tag">DIP</text>
+<text x="160" y="235" class="t e">Политика не зависит от инфраструктурной детали.</text>
+<text x="160" y="241" class="t e">Обе зависят от стабильного контракта.</text>
+<text x="160" y="254" class="a tag">GO</text>
+<text x="160" y="264" class="m f">Service → JobRepository ← PostgreSQL</text>
+<text x="160" y="273" class="m f">NewJobService(repo JobRepository)</text></g>
+
+<!-- 6 Synthesis -->
+<g><rect x="286" y="174" width="116" height="111" rx="2" class="card"/>
+<text x="294" y="190" class="a num">06.</text><text x="307" y="190" class="a big">SOLID</text>
+<line x1="294" y1="197" x2="394" y2="197" class="r"/>
+<text x="294" y="211" class="m q">Что объединяет пять принципов?</text>
+<text x="294" y="224" class="a tag">S → RESPONSIBILITY</text>
+<text x="294" y="231" class="a tag">O → EXTENSION</text>
+<text x="294" y="238" class="a tag">L → CONTRACT</text>
+<text x="294" y="245" class="a tag">I → CONSUMER</text>
+<text x="294" y="252" class="a tag">D → DEPENDENCY</text>
+<text x="294" y="265" class="a tag">НА INTERVIEW:</text>
+<text x="294" y="274" class="m e">SOLID помогает управлять ответственностями,</text>
+<text x="294" y="280" class="m e">изменениями, контрактами и зависимостями.</text></g>
+</svg>

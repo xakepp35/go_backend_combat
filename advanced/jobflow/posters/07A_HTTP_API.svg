@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="420mm" height="297mm" viewBox="0 0 420 297">
+<title>07A. HTTP &amp; API</title>
+<desc>HTTP как transport contract: request, routing, handler, errors, context и API contract.</desc>
+<defs><style>
+.bg{fill:#0B0D10}.card{fill:#11171D;stroke:#3E4853;stroke-width:.8}.inner{fill:#151B21;stroke:#46515C;stroke-width:.7}.t{fill:#F3F6F8;font-family:Inter,"Segoe UI",Arial,sans-serif}.m{fill:#A2ABB5;font-family:Inter,"Segoe UI",Arial,sans-serif}.a{fill:#7DD3FC}.as{stroke:#7DD3FC;fill:none;stroke-linecap:round;stroke-linejoin:round}.r{stroke:#2A3037;stroke-width:.7}
+.title{font-size:17px;font-weight:700;letter-spacing:1.25px}.sub{font-size:4.7px;font-weight:500}.num{font-size:7px;font-weight:800}.ct{font-size:5.75px;font-weight:700;letter-spacing:.45px}.q{font-size:4.05px;font-weight:500}.e{font-size:3.65px;font-weight:500}.f{font-family:"SFMono-Regular",Consolas,"Liberation Mono",monospace;font-size:3.4px;font-weight:600}.tag{font-size:3px;font-weight:700;letter-spacing:.45px}.hero{font-size:6.1px;font-weight:800;letter-spacing:.3px}
+</style><marker id="ar" markerWidth="8" markerHeight="8" refX="6.2" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0 0 8 4 0 8Z" class="a"/></marker></defs>
+<rect width="420" height="297" class="bg"/>
+
+<!-- Header -->
+<text x="18" y="27" class="t title">HTTP &amp; API</text>
+<a href="https://github.com/xakepp35/go_backend_combat"><text x="402" y="27" text-anchor="end" class="m sub">github.com/xakepp35/go_backend_combat</text></a>
+<text x="18" y="36" class="m sub">HTTP — транспортный контракт: принять запрос, вызвать application и вернуть наблюдаемый результат.</text>
+<line x1="18" y1="44" x2="402" y2="44" class="r"/>
+
+<!-- Flow: 1 → 2 → 3 ↘ 4 → 5 → 6 -->
+<path d="M134 106H152M268 106H286M344 162V168H76V174M134 229H152M268 229H286" class="as" stroke-width="1.9" marker-end="url(#ar)"/>
+
+<!-- 1 REQUEST -->
+<g><rect x="18" y="51" width="116" height="111" rx="2" class="card"/>
+<text x="26" y="66" class="a num">01.</text><text x="39" y="66" class="t ct">REQUEST</text>
+<line x1="26" y1="73" x2="126" y2="73" class="r"/>
+<text x="26" y="88" class="m q">Что именно прислал клиент?</text>
+<text x="26" y="101" class="a tag">HTTP</text>
+<text x="26" y="112" class="m f">POST /jobs</text>
+<text x="26" y="120" class="m f">Content-Type: application/json</text>
+<text x="26" y="128" class="m f">{ "type": "email", ... }</text>
+<text x="26" y="142" class="a tag">PARTS</text>
+<text x="26" y="152" class="m e">method · path · headers · body</text>
+<text x="26" y="159" class="m e">+ request context</text></g>
+
+<!-- 2 ROUTING -->
+<g><rect x="152" y="51" width="116" height="111" rx="2" class="card"/>
+<text x="160" y="66" class="a num">02.</text><text x="173" y="66" class="t ct">ROUTING</text>
+<line x1="160" y1="73" x2="260" y2="73" class="r"/>
+<text x="160" y="88" class="m q">Как запрос попадает в нужное действие?</text>
+<text x="160" y="101" class="a tag">ROUTES</text>
+<text x="160" y="112" class="m f">POST /jobs</text>
+<text x="160" y="120" class="m f">GET /jobs/{id}</text>
+<text x="160" y="128" class="m f">POST /jobs/{id}/cancel</text>
+<text x="160" y="142" class="a tag">ROLE</text>
+<text x="160" y="152" class="m e">Router выбирает endpoint.</text>
+<text x="160" y="159" class="m e">Business policy находится ниже.</text></g>
+
+<!-- 3 HANDLER -->
+<g><rect x="286" y="51" width="116" height="111" rx="2" class="card"/>
+<text x="294" y="66" class="a num">03.</text><text x="307" y="66" class="t ct">HANDLER</text>
+<line x1="294" y1="73" x2="394" y2="73" class="r"/>
+<text x="294" y="88" class="m q">Что должен делать HTTP handler?</text>
+<text x="294" y="101" class="a tag">ADAPTER</text>
+<text x="294" y="112" class="m f">decode</text>
+<text x="294" y="120" class="m f">validate transport</text>
+<text x="294" y="128" class="m f">call application</text>
+<text x="294" y="136" class="m f">map result</text>
+<text x="294" y="144" class="m f">write response</text>
+<text x="294" y="158" class="m e">Handler переводит HTTP DTO</text>
+<text x="294" y="164" class="m e">в application contract.</text></g>
+
+<!-- 4 STATUS / ERROR -->
+<g><rect x="18" y="174" width="116" height="111" rx="2" class="card"/>
+<text x="26" y="189" class="a num">04.</text><text x="39" y="189" class="t ct">STATUS / ERROR</text>
+<line x1="26" y1="196" x2="126" y2="196" class="r"/>
+<text x="26" y="211" class="m q">Как application result становится HTTP?</text>
+<text x="26" y="224" class="a tag">MAPPING</text>
+<text x="26" y="235" class="m f">invalid request → 400</text>
+<text x="26" y="243" class="m f">not found → 404</text>
+<text x="26" y="251" class="m f">conflict → 409</text>
+<text x="26" y="259" class="m f">internal failure → 500</text>
+<text x="26" y="273" class="a tag">PRINCIPLE</text>
+<text x="26" y="283" class="m e">Domain error не должен знать про HTTP.</text></g>
+
+<!-- 5 CONTEXT -->
+<g><rect x="152" y="174" width="116" height="111" rx="2" class="card"/>
+<text x="160" y="189" class="a num">05.</text><text x="173" y="189" class="t ct">CONTEXT</text>
+<line x1="160" y1="196" x2="260" y2="196" class="r"/>
+<text x="160" y="211" class="m q">Как cancellation доходит до внутренних операций?</text>
+<text x="160" y="224" class="a tag">CALL CHAIN</text>
+<text x="160" y="235" class="m f">HTTP request</text>
+<text x="160" y="243" class="m f">↓ context.Context</text>
+<text x="160" y="251" class="m f">service → repository</text>
+<text x="160" y="259" class="m f">service → downstream</text>
+<text x="160" y="273" class="a tag">RULE</text>
+<text x="160" y="282" class="m e">Передавай request context вниз по call chain.</text></g>
+
+<!-- 6 API CONTRACT -->
+<g><rect x="286" y="174" width="116" height="111" rx="2" class="card"/>
+<text x="294" y="189" class="a num">06.</text><text x="307" y="189" class="t ct">API CONTRACT</text>
+<line x1="294" y1="196" x2="394" y2="196" class="r"/>
+<text x="294" y="211" class="m q">Что обещает endpoint клиенту?</text>
+<text x="294" y="224" class="a tag">REQUEST</text>
+<text x="294" y="235" class="m f">POST /jobs</text>
+<text x="294" y="245" class="m f">{ type, payload }</text>
+<text x="294" y="259" class="a tag">RESPONSE</text>
+<text x="294" y="270" class="m f">201 Created</text>
+<text x="294" y="278" class="m f">{ id, status }</text>
+<text x="294" y="288" class="m e">API — контракт поведения, не структура кода.</text></g>
+</svg>

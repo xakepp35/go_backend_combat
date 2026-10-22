@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1060" viewBox="0 0 1600 1060" role="img" aria-labelledby="title desc">
+<title id="title">Дай действию имя и ясный договор</title><desc id="desc">Вход → предусловие → результат. Побочные эффекты называем отдельно.</desc>
+<defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0 0 L10 5 L0 10 Z" fill="#69d6f5"/></marker></defs>
+<rect width="1600" height="1060" fill="#0b111b"/>
+<text x="60" y="42" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="18" font-weight="400" fill="#69d6f5">GO BACKEND COMBAT  /  ПЕРВАЯ ЧАСТЬ</text>
+<text x="60" y="99" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="38" font-weight="700" fill="#eef5ff">Дай действию имя и ясный договор</text>
+<text x="60" y="143" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">Вход → предусловие → результат. Побочные эффекты называем отдельно.</text>
+<path d="M60 165 H1540" stroke="#34455b"/>
+<rect x="60" y="240" width="400" height="230" rx="18" fill="#142030" stroke="#34455b" stroke-width="2"/>
+<rect x="60" y="262" width="5" height="32" rx="2" fill="#69d6f5"/>
+<text x="83" y="288" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="25" font-weight="700" fill="#69d6f5">Аргументы вызова</text>
+<text x="83" y="328" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">&quot;Купить чай&quot;</text>
+<text x="83" y="361" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">2</text>
+<text x="83" y="394" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">Конкретные значения.</text>
+<rect x="590" y="240" width="420" height="230" rx="18" fill="#142030" stroke="#34455b" stroke-width="2"/>
+<rect x="590" y="262" width="5" height="32" rx="2" fill="#ffbf69"/>
+<text x="613" y="288" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="25" font-weight="700" fill="#ffbf69">describe(title, priority)</text>
+<text x="613" y="328" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">title string, priority int</text>
+<text x="613" y="361" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">Проверенный приоритет.</text>
+<text x="613" y="394" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">Собирает и возвращает строку.</text>
+<rect x="1140" y="240" width="400" height="230" rx="18" fill="#142030" stroke="#34455b" stroke-width="2"/>
+<rect x="1140" y="262" width="5" height="32" rx="2" fill="#8ee3b4"/>
+<text x="1163" y="288" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="25" font-weight="700" fill="#8ee3b4">Результат</text>
+<text x="1163" y="328" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">&quot;Купить чай (приоритет 2)&quot;</text>
+<text x="1163" y="361" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">Пока ещё не напечатан.</text>
+<text x="1163" y="394" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">Куда передать — решает main.</text>
+<path d="M465 350 H578" fill="none" stroke="#69d6f5" stroke-width="3" marker-end="url(#arrow)"/>
+<path d="M1015 350 H1128" fill="none" stroke="#69d6f5" stroke-width="3" marker-end="url(#arrow)"/>
+<rect x="60" y="545" width="710" height="190" rx="18" fill="#142030" stroke="#34455b" stroke-width="2"/>
+<rect x="60" y="567" width="5" height="32" rx="2" fill="#69d6f5"/>
+<text x="83" y="593" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="25" font-weight="700" fill="#69d6f5">Расчёт без побочного эффекта</text>
+<text x="83" y="633" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">describe(...) → string; isUrgent(...) → bool</text>
+<text x="83" y="666" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">Одинаковый вход → одинаковый результат.</text>
+<text x="83" y="699" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">Удобно сравнивать с ожиданием.</text>
+<rect x="830" y="545" width="710" height="190" rx="18" fill="#142030" stroke="#34455b" stroke-width="2"/>
+<rect x="830" y="567" width="5" height="32" rx="2" fill="#ffbf69"/>
+<text x="853" y="593" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="25" font-weight="700" fill="#ffbf69">Действие с побочным эффектом</text>
+<text x="853" y="633" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">Println / запись / отправка</text>
+<text x="853" y="666" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">Меняет наблюдаемый мир за пределами результата.</text>
+<text x="853" y="699" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">Проверка допустимости — до действия.</text>
+<rect x="60" y="795" width="1480" height="160" rx="18" fill="#142030" stroke="#34455b" stroke-width="2"/>
+<rect x="60" y="817" width="5" height="32" rx="2" fill="#8ee3b4"/>
+<text x="83" y="843" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="25" font-weight="700" fill="#8ee3b4">Публичная сервисная граница курса: (ctx, req) → (res, err)</text>
+<text x="83" y="883" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">TaskService и общие DTO — в pkg. Ответ списка — объект с Tasks, место для будущих полей.</text>
+<text x="83" y="916" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">Это стандарт сервиса; небольшая расчётная функция вправе возвращать bool или строку.</text>
+<path d="M60 987 H1540" stroke="#34455b"/>
+<text x="60" y="1026" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="20" font-weight="400" fill="#b9c8dc">Рефакторинг: меняем внутреннее устройство, сохраняя согласованное поведение и проверочные примеры.</text>
+</svg>

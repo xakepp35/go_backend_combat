@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1060" viewBox="0 0 1600 1060" role="img" aria-labelledby="title desc">
+<title id="title">Сначала понимаем. Потом пишем. Потом проверяем.</title><desc id="desc">Один и тот же инженерный цикл — для трёх строк и для большого сервиса.</desc>
+<defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0 0 L10 5 L0 10 Z" fill="#69d6f5"/></marker></defs>
+<rect width="1600" height="1060" fill="#0b111b"/>
+<text x="60" y="42" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="18" font-weight="400" fill="#69d6f5">GO BACKEND COMBAT  /  ПЕРВАЯ ЧАСТЬ</text>
+<text x="60" y="99" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="38" font-weight="700" fill="#eef5ff">Сначала понимаем. Потом пишем. Потом проверяем.</text>
+<text x="60" y="143" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">Один и тот же инженерный цикл — для трёх строк и для большого сервиса.</text>
+<path d="M60 165 H1540" stroke="#34455b"/>
+<rect x="60" y="205" width="340" height="170" rx="18" fill="#142030" stroke="#34455b" stroke-width="2"/>
+<rect x="60" y="227" width="5" height="32" rx="2" fill="#69d6f5"/>
+<text x="83" y="253" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="25" font-weight="700" fill="#69d6f5">01  Просьба</text>
+<text x="83" y="293" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">Кому помогаем?</text>
+<text x="83" y="326" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">Что станет удобнее?</text>
+<path d="M404 290 H429" fill="none" stroke="#69d6f5" stroke-width="3" marker-end="url(#arrow)"/>
+<rect x="440" y="205" width="340" height="170" rx="18" fill="#142030" stroke="#34455b" stroke-width="2"/>
+<rect x="440" y="227" width="5" height="32" rx="2" fill="#69d6f5"/>
+<text x="463" y="253" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="25" font-weight="700" fill="#69d6f5">02  Требования</text>
+<text x="463" y="293" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">Что именно получаем?</text>
+<text x="463" y="326" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">Какие есть ограничения?</text>
+<path d="M784 290 H809" fill="none" stroke="#69d6f5" stroke-width="3" marker-end="url(#arrow)"/>
+<rect x="820" y="205" width="340" height="170" rx="18" fill="#142030" stroke="#34455b" stroke-width="2"/>
+<rect x="820" y="227" width="5" height="32" rx="2" fill="#69d6f5"/>
+<text x="843" y="253" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="25" font-weight="700" fill="#69d6f5">03  Инварианты</text>
+<text x="843" y="293" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">Что обязано оставаться</text>
+<text x="843" y="326" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">верным после изменения?</text>
+<path d="M1164 290 H1189" fill="none" stroke="#69d6f5" stroke-width="3" marker-end="url(#arrow)"/>
+<rect x="1200" y="205" width="340" height="170" rx="18" fill="#142030" stroke="#34455b" stroke-width="2"/>
+<rect x="1200" y="227" width="5" height="32" rx="2" fill="#69d6f5"/>
+<text x="1223" y="253" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="25" font-weight="700" fill="#69d6f5">04  Примеры</text>
+<text x="1223" y="293" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">Обычный случай, граница,</text>
+<text x="1223" y="326" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">неудобный вход.</text>
+<rect x="60" y="450" width="340" height="170" rx="18" fill="#142030" stroke="#34455b" stroke-width="2"/>
+<rect x="60" y="472" width="5" height="32" rx="2" fill="#69d6f5"/>
+<text x="83" y="498" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="25" font-weight="700" fill="#69d6f5">05  Алгоритм</text>
+<text x="83" y="538" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">Что делаем сначала?</text>
+<text x="83" y="571" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">Что следует за этим?</text>
+<path d="M404 535 H429" fill="none" stroke="#69d6f5" stroke-width="3" marker-end="url(#arrow)"/>
+<rect x="440" y="450" width="340" height="170" rx="18" fill="#142030" stroke="#34455b" stroke-width="2"/>
+<rect x="440" y="472" width="5" height="32" rx="2" fill="#69d6f5"/>
+<text x="463" y="498" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="25" font-weight="700" fill="#69d6f5">06  Реализация</text>
+<text x="463" y="538" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">Один небольшой шаг.</text>
+<text x="463" y="571" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">Форматирует go fmt.</text>
+<path d="M784 535 H809" fill="none" stroke="#69d6f5" stroke-width="3" marker-end="url(#arrow)"/>
+<rect x="820" y="450" width="340" height="170" rx="18" fill="#142030" stroke="#34455b" stroke-width="2"/>
+<rect x="820" y="472" width="5" height="32" rx="2" fill="#69d6f5"/>
+<text x="843" y="498" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="25" font-weight="700" fill="#69d6f5">07  Сравнение</text>
+<text x="843" y="538" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">Ожидание ↔ наблюдение.</text>
+<text x="843" y="571" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">Где именно разошлись?</text>
+<path d="M1164 535 H1189" fill="none" stroke="#69d6f5" stroke-width="3" marker-end="url(#arrow)"/>
+<rect x="1200" y="450" width="340" height="170" rx="18" fill="#142030" stroke="#34455b" stroke-width="2"/>
+<rect x="1200" y="472" width="5" height="32" rx="2" fill="#69d6f5"/>
+<text x="1223" y="498" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="25" font-weight="700" fill="#69d6f5">08  Сохранение</text>
+<text x="1223" y="538" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">Осмысленный diff, коммит,</text>
+<text x="1223" y="571" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">объяснение на ревью.</text>
+<path d="M1370 378 V409 H230 V440" fill="none" stroke="#69d6f5" stroke-width="3" marker-end="url(#arrow)"/>
+<rect x="60" y="690" width="470" height="225" rx="18" fill="#142030" stroke="#34455b" stroke-width="2"/>
+<rect x="60" y="712" width="5" height="32" rx="2" fill="#69d6f5"/>
+<text x="83" y="738" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="25" font-weight="700" fill="#69d6f5">Требование</text>
+<text x="83" y="778" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">Показать план на сегодня.</text>
+<text x="83" y="811" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">Договариваемся о поведении</text>
+<text x="83" y="844" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">и способе приёмки.</text>
+<rect x="565" y="690" width="470" height="225" rx="18" fill="#142030" stroke="#34455b" stroke-width="2"/>
+<rect x="565" y="712" width="5" height="32" rx="2" fill="#ffbf69"/>
+<text x="588" y="738" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="25" font-weight="700" fill="#ffbf69">Инвариант</text>
+<text x="588" y="778" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">Не потерять и не повторить</text>
+<text x="588" y="811" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">дела при отображении.</text>
+<text x="588" y="844" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">Защищаем правило.</text>
+<rect x="1070" y="690" width="470" height="225" rx="18" fill="#142030" stroke="#34455b" stroke-width="2"/>
+<rect x="1070" y="712" width="5" height="32" rx="2" fill="#8ee3b4"/>
+<text x="1093" y="738" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="25" font-weight="700" fill="#8ee3b4">Проверочный пример</text>
+<text x="1093" y="778" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">Два дела → две строки</text>
+<text x="1093" y="811" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">в согласованном порядке.</text>
+<text x="1093" y="844" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">Один пример ≠ все случаи.</text>
+<path d="M60 987 H1540" stroke="#34455b"/>
+<text x="60" y="1026" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="20" font-weight="400" fill="#b9c8dc">Не сошлось? Уточни требование, проверь шаги алгоритма, затем исследуй конкретный код.</text>
+</svg>

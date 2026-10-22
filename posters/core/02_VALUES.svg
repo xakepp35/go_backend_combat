@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000" role="img" aria-labelledby="title desc">
+<title id="title">Данные → вычисление → понятный отчёт</title><desc id="desc">Тип разрешает действия. Единица задаёт смысл. Порядок задаёт результат.</desc>
+<defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0 0 L10 5 L0 10 Z" fill="#69d6f5"/></marker></defs>
+<rect width="1600" height="1000" fill="#0b111b"/>
+<text x="60" y="42" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="18" font-weight="400" fill="#69d6f5">GO BACKEND COMBAT  /  ПЕРВАЯ ЧАСТЬ</text>
+<text x="60" y="99" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="38" font-weight="700" fill="#eef5ff">Данные → вычисление → понятный отчёт</text>
+<text x="60" y="143" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">Тип разрешает действия. Единица задаёт смысл. Порядок задаёт результат.</text>
+<path d="M60 165 H1540" stroke="#34455b"/>
+<rect x="60" y="225" width="420" height="330" rx="18" fill="#142030" stroke="#34455b" stroke-width="2"/>
+<rect x="60" y="247" width="5" height="32" rx="2" fill="#69d6f5"/>
+<text x="83" y="273" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="25" font-weight="700" fill="#69d6f5">Входные значения</text>
+<text x="83" y="313" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">firstMinutes = 25</text>
+<text x="83" y="346" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">secondMinutes = 15</text>
+<text x="83" y="379" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">breakMinutes = 5</text>
+<text x="83" y="412" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">availableMinutes = 60</text>
+<text x="83" y="445" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">Единица: целые минуты.</text>
+<rect x="590" y="225" width="420" height="330" rx="18" fill="#142030" stroke="#34455b" stroke-width="2"/>
+<rect x="590" y="247" width="5" height="32" rx="2" fill="#ffbf69"/>
+<text x="613" y="273" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="25" font-weight="700" fill="#ffbf69">Вычисление</text>
+<text x="613" y="313" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">work = 25 + 15 = 40</text>
+<text x="613" y="346" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">total = 40 + 5 = 45</text>
+<text x="613" y="379" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">hours = 45 / 60 = 0</text>
+<text x="613" y="412" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">minutes = 45 % 60 = 45</text>
+<text x="613" y="445" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">fits = 45 &lt;= 60 → true</text>
+<rect x="1120" y="225" width="420" height="330" rx="18" fill="#142030" stroke="#34455b" stroke-width="2"/>
+<rect x="1120" y="247" width="5" height="32" rx="2" fill="#8ee3b4"/>
+<text x="1143" y="273" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="25" font-weight="700" fill="#8ee3b4">Представление</text>
+<text x="1143" y="313" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">Работа: 40 мин</text>
+<text x="1143" y="346" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">Перерыв: 5 мин</text>
+<text x="1143" y="379" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">Всего: 0 ч 45 мин</text>
+<text x="1143" y="412" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">Время на вечер: 60 мин</text>
+<text x="1143" y="445" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">План помещается.</text>
+<path d="M485 390 H578" fill="none" stroke="#69d6f5" stroke-width="3" marker-end="url(#arrow)"/>
+<path d="M1015 390 H1108" fill="none" stroke="#69d6f5" stroke-width="3" marker-end="url(#arrow)"/>
+<rect x="60" y="640" width="465" height="220" rx="18" fill="#142030" stroke="#34455b" stroke-width="2"/>
+<rect x="60" y="662" width="5" height="32" rx="2" fill="#69d6f5"/>
+<text x="83" y="688" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="25" font-weight="700" fill="#69d6f5">Не Excel-формула</text>
+<text x="83" y="728" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">После firstMinutes = 40</text>
+<text x="83" y="761" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">старый total сам не меняется.</text>
+<text x="83" y="794" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">Вычисли его заново.</text>
+<rect x="565" y="640" width="470" height="220" rx="18" fill="#142030" stroke="#34455b" stroke-width="2"/>
+<rect x="565" y="662" width="5" height="32" rx="2" fill="#ffbf69"/>
+<text x="588" y="688" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="25" font-weight="700" fill="#ffbf69">Ноль ≠ валидность</text>
+<text x="588" y="728" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">int → 0, string → пусто.</text>
+<text x="588" y="761" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">Язык задаёт значение;</text>
+<text x="588" y="794" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">смысл проверяет приложение.</text>
+<rect x="1075" y="640" width="465" height="220" rx="18" fill="#142030" stroke="#34455b" stroke-width="2"/>
+<rect x="1075" y="662" width="5" height="32" rx="2" fill="#8ee3b4"/>
+<text x="1098" y="688" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="25" font-weight="700" fill="#8ee3b4">Проверь границу</text>
+<text x="1098" y="728" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">59 → 0 ч 59 мин</text>
+<text x="1098" y="761" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">60 → 1 ч 0 мин</text>
+<text x="1098" y="794" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">61 → 1 ч 1 мин</text>
+<path d="M60 927 H1540" stroke="#34455b"/>
+<text x="60" y="966" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="20" font-weight="400" fill="#b9c8dc">Имена хранят единицы: durationMinutes понятнее duration. Тип int сам не отличает минуты от секунд.</text>
+</svg>

@@ -1,0 +1,48 @@
+name: Review submitted JobFlow
+on:
+  workflow_dispatch:
+    inputs:
+      repository:
+        description: 'Student repository: owner/repository'
+        required: true
+        type: string
+      revision:
+        description: 'Commit SHA, branch or tag to check'
+        required: true
+        type: string
+      track:
+        description: Core course or advanced technical snapshots
+        required: true
+        default: core
+        type: choice
+        options: [core, advanced]
+      lesson:
+        description: 'Completed lesson, 1–24'
+        required: true
+        type: number
+permissions:
+  contents: read
+jobs:
+  grade:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          path: course
+          persist-credentials: false
+      - uses: actions/checkout@v5
+        with:
+          repository: ${{ inputs.repository }}
+          ref: ${{ inputs.revision }}
+          path: submission
+          persist-credentials: false
+      - uses: actions/setup-go@v6
+        with:
+          go-version: '1.27.2'
+          cache: false
+      - name: Cumulative mandatory contract
+        env:
+          LESSON: ${{ inputs.lesson }}
+          TRACK: ${{ inputs.track }}
+        run: python3 course/tools/coursecheck.py --track "$TRACK" --lesson "$LESSON" --project "$GITHUB_WORKSPACE/submission"

@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1140" viewBox="0 0 1600 1140" role="img" aria-labelledby="title desc">
+<title id="title">Кто вызывает — и кто от кого зависит</title><desc id="desc">Поток вызовов и граф импортов отвечают на разные вопросы.</desc>
+<defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0 0 L10 5 L0 10 Z" fill="#69d6f5"/></marker></defs>
+<rect width="1600" height="1140" fill="#0b111b"/>
+<text x="60" y="42" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="18" font-weight="400" fill="#69d6f5">GO BACKEND COMBAT  /  HTTP / ДАННЫЕ / ДОГОВОРЫ</text>
+<text x="60" y="99" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="38" font-weight="700" fill="#eef5ff">Кто вызывает — и кто от кого зависит</text>
+<text x="60" y="143" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">Поток вызовов и граф импортов отвечают на разные вопросы.</text>
+<path d="M60 165 H1540" stroke="#34455b"/>
+<rect x="60" y="220" width="420" height="215" rx="18" fill="#142030" stroke="#34455b" stroke-width="2"/>
+<rect x="60" y="242" width="5" height="32" rx="2" fill="#69d6f5"/>
+<text x="83" y="268" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="25" font-weight="700" fill="#69d6f5">API</text>
+<text x="83" y="308" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">New(pkg.TaskService)</text>
+<text x="83" y="341" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">HTTP → req → вызов → res</text>
+<text x="83" y="374" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">Не выбирает хранилище.</text>
+<rect x="590" y="220" width="420" height="215" rx="18" fill="#142030" stroke="#34455b" stroke-width="2"/>
+<rect x="590" y="242" width="5" height="32" rx="2" fill="#ffbf69"/>
+<text x="613" y="268" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="25" font-weight="700" fill="#ffbf69">app.Service</text>
+<text x="613" y="308" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">New(pkg.TaskRepository)</text>
+<text x="613" y="341" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">Проверяет сценарий.</text>
+<text x="613" y="374" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">Не импортирует драйвер.</text>
+<rect x="1120" y="220" width="420" height="215" rx="18" fill="#142030" stroke="#34455b" stroke-width="2"/>
+<rect x="1120" y="242" width="5" height="32" rx="2" fill="#8ee3b4"/>
+<text x="1143" y="268" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="25" font-weight="700" fill="#8ee3b4">Адаптер хранилища</text>
+<text x="1143" y="308" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">memory / postgres</text>
+<text x="1143" y="341" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">Выполняет выходной порт.</text>
+<text x="1143" y="374" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">Сохраняет его инварианты.</text>
+<path d="M485 330 H578" fill="none" stroke="#69d6f5" stroke-width="3" marker-end="url(#arrow)"/>
+<path d="M1015 330 H1108" fill="none" stroke="#69d6f5" stroke-width="3" marker-end="url(#arrow)"/>
+<text x="800" y="485" text-anchor="middle" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="700" fill="#69d6f5">ВЫЗОВЫ: API → СЕРВИС → ИСПОЛНИТЕЛЬ ПОРТА</text>
+<rect x="480" y="590" width="640" height="190" rx="18" fill="#142030" stroke="#34455b" stroke-width="2"/>
+<rect x="480" y="612" width="5" height="32" rx="2" fill="#69d6f5"/>
+<text x="503" y="638" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="25" font-weight="700" fill="#69d6f5">pkg — общий договор</text>
+<text x="503" y="678" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">service.go: входной TaskService</text>
+<text x="503" y="711" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">ports.go: выходной TaskRepository</text>
+<text x="503" y="744" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">Модель / ошибки / req / res — рядом.</text>
+<path d="M270 442 V680 H467" fill="none" stroke="#69d6f5" stroke-width="3" marker-end="url(#arrow)"/>
+<path d="M800 495 V577" fill="none" stroke="#69d6f5" stroke-width="3" marker-end="url(#arrow)"/>
+<path d="M1330 442 V680 H1133" fill="none" stroke="#69d6f5" stroke-width="3" marker-end="url(#arrow)"/>
+<text x="245" y="565" text-anchor="end" font-family="DejaVu Sans,sans-serif" font-size="21" font-weight="400" fill="#b9c8dc">импорт</text>
+<text x="1355" y="565" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="21" font-weight="400" fill="#b9c8dc">импорт</text>
+<rect x="60" y="860" width="710" height="170" rx="18" fill="#142030" stroke="#34455b" stroke-width="2"/>
+<rect x="60" y="882" width="5" height="32" rx="2" fill="#8ee3b4"/>
+<text x="83" y="908" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="25" font-weight="700" fill="#8ee3b4">main собирает конкретные части</text>
+<text x="83" y="948" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">postgres.Open → Goose → app.New → api.New</text>
+<text x="83" y="981" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">Замена на memory меняет место сборки.</text>
+<text x="83" y="1014" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">HTTP-договор не обязан меняться.</text>
+<rect x="830" y="860" width="710" height="170" rx="18" fill="#142030" stroke="#34455b" stroke-width="2"/>
+<rect x="830" y="882" width="5" height="32" rx="2" fill="#ffbf69"/>
+<text x="853" y="908" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="25" font-weight="700" fill="#ffbf69">Форма и смысл</text>
+<text x="853" y="948" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">Компилятор проверяет набор методов.</text>
+<text x="853" y="981" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">Сценарии проверяют обещанное поведение.</text>
+<text x="853" y="1014" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">Интерфейс имеет цену сопровождения.</text>
+<path d="M60 1067 H1540" stroke="#34455b"/>
+<text x="60" y="1106" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="20" font-weight="400" fill="#b9c8dc">Публичный ответ — объект. Приватный помощник может вернуть bool или строку.</text>
+</svg>

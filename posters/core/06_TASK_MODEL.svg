@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1030" viewBox="0 0 1600 1030" role="img" aria-labelledby="title desc">
+<title id="title">Одна задача — одна карточка</title><desc id="desc">Изменение копии и изменение хранилища — разные шаги.</desc>
+<defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0 0 L10 5 L0 10 Z" fill="#69d6f5"/></marker></defs>
+<rect width="1600" height="1030" fill="#0b111b"/>
+<text x="60" y="42" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="18" font-weight="400" fill="#69d6f5">GO BACKEND COMBAT  /  ПРАКТИЧЕСКИЙ МАРШРУТ</text>
+<text x="60" y="99" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="38" font-weight="700" fill="#eef5ff">Одна задача — одна карточка</text>
+<text x="60" y="143" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">Изменение копии и изменение хранилища — разные шаги.</text>
+<path d="M60 165 H1540" stroke="#34455b"/>
+<rect x="60" y="220" width="460" height="310" rx="18" fill="#142030" stroke="#34455b" stroke-width="2"/>
+<rect x="60" y="242" width="5" height="32" rx="2" fill="#69d6f5"/>
+<text x="83" y="268" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="25" font-weight="700" fill="#69d6f5">pkg.Task</text>
+<text x="83" y="308" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">ID: a</text>
+<text x="83" y="341" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">Title: Повторить Go</text>
+<text x="83" y="374" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">Priority: 2</text>
+<text x="83" y="407" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">Done: false</text>
+<text x="83" y="440" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">Публичная модель одна.</text>
+<rect x="570" y="220" width="460" height="310" rx="18" fill="#142030" stroke="#34455b" stroke-width="2"/>
+<rect x="570" y="242" width="5" height="32" rx="2" fill="#ffbf69"/>
+<text x="593" y="268" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="25" font-weight="700" fill="#ffbf69">Локальная копия</text>
+<text x="593" y="308" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">t := tasks[&quot;a&quot;]</text>
+<text x="593" y="341" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">t.Complete()</text>
+<text x="593" y="374" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">Теперь t.Done == true.</text>
+<text x="593" y="407" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">Map пока хранит false.</text>
+<text x="593" y="440" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">Указатель меняет получателя.</text>
+<rect x="1080" y="220" width="460" height="310" rx="18" fill="#142030" stroke="#34455b" stroke-width="2"/>
+<rect x="1080" y="242" width="5" height="32" rx="2" fill="#8ee3b4"/>
+<text x="1103" y="268" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="25" font-weight="700" fill="#8ee3b4">Запись результата</text>
+<text x="1103" y="308" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">tasks[&quot;a&quot;] = t</text>
+<text x="1103" y="341" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">Теперь map хранит true.</text>
+<text x="1103" y="374" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">Название и ID сохранены.</text>
+<text x="1103" y="407" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">Повтор Complete → true.</text>
+<text x="1103" y="440" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">Неизвестный ID → отказ.</text>
+<path d="M525 375 H557" fill="none" stroke="#69d6f5" stroke-width="3" marker-end="url(#arrow)"/>
+<path d="M1035 375 H1067" fill="none" stroke="#69d6f5" stroke-width="3" marker-end="url(#arrow)"/>
+<rect x="60" y="625" width="720" height="280" rx="18" fill="#142030" stroke="#34455b" stroke-width="2"/>
+<rect x="60" y="647" width="5" height="32" rx="2" fill="#ffbf69"/>
+<text x="83" y="673" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="25" font-weight="700" fill="#ffbf69">Копирование не всегда глубокое</text>
+<text x="83" y="713" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">Для наших простых полей — копия значений.</text>
+<text x="83" y="746" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">Срез, map или указатель внутри Task</text>
+<text x="83" y="779" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">могут сохранять общие вложенные данные.</text>
+<rect x="820" y="625" width="720" height="280" rx="18" fill="#142030" stroke="#34455b" stroke-width="2"/>
+<rect x="820" y="647" width="5" height="32" rx="2" fill="#8ee3b4"/>
+<text x="843" y="673" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="25" font-weight="700" fill="#8ee3b4">Владение изменением</text>
+<text x="843" y="713" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">Храним Task: прочитал → изменил → записал.</text>
+<text x="843" y="746" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">Храним *Task: общие ссылки и риск nil.</text>
+<text x="843" y="779" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">Выбираем понятный договор изменения.</text>
+<path d="M60 957 H1540" stroke="#34455b"/>
+<text x="60" y="996" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="20" font-weight="400" fill="#b9c8dc">Идемпотентное поле Done не гарантирует однократную отправку письма или другого внешнего эффекта.</text>
+</svg>

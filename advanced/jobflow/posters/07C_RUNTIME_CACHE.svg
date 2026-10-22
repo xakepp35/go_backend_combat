@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="420mm" height="297mm" viewBox="0 0 420 297">
+<title>07C. RUNTIME &amp; CACHE</title>
+<desc>Runtime JobFlow: composition root, HTTP server, Redis cache, cache semantics, resource limits и lifecycle.</desc>
+<defs><style>
+.bg{fill:#0B0D10}.card{fill:#11171D;stroke:#3E4853;stroke-width:.8}.inner{fill:#151B21;stroke:#46515C;stroke-width:.7}.t{fill:#F3F6F8;font-family:Inter,"Segoe UI",Arial,sans-serif}.m{fill:#A2ABB5;font-family:Inter,"Segoe UI",Arial,sans-serif}.a{fill:#7DD3FC}.as{stroke:#7DD3FC;fill:none;stroke-linecap:round;stroke-linejoin:round}.r{stroke:#2A3037;stroke-width:.7}
+.title{font-size:17px;font-weight:700;letter-spacing:1.25px}.sub{font-size:4.7px;font-weight:500}.num{font-size:7px;font-weight:800}.ct{font-size:5.7px;font-weight:700;letter-spacing:.45px}.q{font-size:4.05px;font-weight:500}.e{font-size:3.65px;font-weight:500}.f{font-family:"SFMono-Regular",Consolas,"Liberation Mono",monospace;font-size:3.4px;font-weight:600}.tag{font-size:3px;font-weight:700;letter-spacing:.45px}.hero{font-size:6.1px;font-weight:800;letter-spacing:.3px}
+</style><marker id="ar" markerWidth="8" markerHeight="8" refX="6.2" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0 0 8 4 0 8Z" class="a"/></marker></defs>
+<rect width="420" height="297" class="bg"/>
+
+<!-- Header -->
+<text x="18" y="27" class="t title">RUNTIME &amp; CACHE</text>
+<a href="https://github.com/xakepp35/go_backend_combat"><text x="402" y="27" text-anchor="end" class="m sub">github.com/xakepp35/go_backend_combat</text></a>
+<text x="18" y="36" class="m sub">Собери runtime вокруг явного ownership: wiring → server → state → limits → shutdown.</text>
+<line x1="18" y1="44" x2="402" y2="44" class="r"/>
+
+<!-- Flow: 1 → 2 → 3 ↘ 4 → 5 → 6 -->
+<path d="M134 106H152M268 106H286M344 162V168H76V174M134 229H152M268 229H286" class="as" stroke-width="1.9" marker-end="url(#ar)"/>
+
+<!-- 1 COMPOSITION ROOT -->
+<g><rect x="18" y="51" width="116" height="111" rx="2" class="card"/>
+<text x="26" y="66" class="a num">01.</text><text x="39" y="66" class="t ct">COMPOSITION ROOT</text>
+<line x1="26" y1="73" x2="126" y2="73" class="r"/>
+<text x="26" y="88" class="m q">Кто создаёт и связывает компоненты?</text>
+<text x="26" y="101" class="a tag">MAIN</text>
+<text x="26" y="112" class="m f">config</text>
+<text x="26" y="120" class="m f">pgxpool</text>
+<text x="26" y="128" class="m f">redis · kafka</text>
+<text x="26" y="136" class="m f">services · handlers · workers</text>
+<text x="26" y="150" class="m e">Composition root владеет wiring.</text>
+<text x="26" y="158" class="m e">Компоненты не создают глобальные зависимости сами.</text></g>
+
+<!-- 2 HTTP SERVER -->
+<g><rect x="152" y="51" width="116" height="111" rx="2" class="card"/>
+<text x="160" y="66" class="a num">02.</text><text x="173" y="66" class="t ct">HTTP SERVER</text>
+<line x1="160" y1="73" x2="260" y2="73" class="r"/>
+<text x="160" y="88" class="m q">Как живёт HTTP сервер?</text>
+<text x="160" y="101" class="a tag">LIFECYCLE</text>
+<text x="160" y="112" class="m f">init → start → serve</text>
+<text x="160" y="124" class="m f">SIGTERM → drain</text>
+<text x="160" y="136" class="m f">→ shutdown → wait</text>
+<text x="160" y="150" class="m e">Server lifecycle связан с lifecycle приложения.</text>
+<text x="160" y="158" class="m e">Запуск и остановка — явные состояния.</text></g>
+
+<!-- 3 CACHE -->
+<g><rect x="286" y="51" width="116" height="111" rx="2" class="card"/>
+<text x="294" y="66" class="a num">03.</text><text x="307" y="66" class="t ct">CACHE</text>
+<line x1="294" y1="73" x2="394" y2="73" class="r"/>
+<text x="294" y="88" class="m q">Где взять данные быстрее source of truth?</text>
+<text x="294" y="101" class="a tag">REDIS</text>
+<text x="294" y="112" class="m f">GET /jobs/{id}</text>
+<text x="294" y="123" class="m f">↓ Redis HIT → result</text>
+<text x="294" y="134" class="m f">↓ MISS → PostgreSQL</text>
+<text x="294" y="145" class="m f">         → Redis</text>
+<text x="294" y="158" class="m e">Cache ускоряет чтение derived state.</text></g>
+
+<!-- 4 CACHE SEMANTICS -->
+<g><rect x="18" y="174" width="116" height="111" rx="2" class="card"/>
+<text x="26" y="189" class="a num">04.</text><text x="39" y="189" class="t ct">CACHE SEMANTICS</text>
+<line x1="26" y1="196" x2="126" y2="196" class="r"/>
+<text x="26" y="211" class="m q">Что произойдёт, если Redis исчезнет?</text>
+<text x="26" y="224" class="a tag">SOURCE OF TRUTH</text>
+<text x="26" y="235" class="m f">PostgreSQL = state</text>
+<text x="26" y="243" class="m f">Redis = derived / temporary</text>
+<text x="26" y="257" class="a tag">SEMANTICS</text>
+<text x="26" y="268" class="m e">MISS — нормален.</text>
+<text x="26" y="276" class="m e">STALE — допустим только по policy.</text>
+<text x="26" y="284" class="m e">FAILURE cache ≠ FAILURE state.</text></g>
+
+<!-- 5 RESOURCE LIMITS -->
+<g><rect x="152" y="174" width="116" height="111" rx="2" class="card"/>
+<text x="160" y="189" class="a num">05.</text><text x="173" y="189" class="t ct">RESOURCE LIMITS</text>
+<line x1="160" y1="196" x2="260" y2="196" class="r"/>
+<text x="160" y="211" class="m q">Что ограничивает concurrent load?</text>
+<text x="160" y="224" class="a tag">BOUNDED</text>
+<text x="160" y="235" class="m f">workers</text>
+<text x="160" y="243" class="m f">in-flight requests</text>
+<text x="160" y="251" class="m f">DB connections</text>
+<text x="160" y="259" class="m f">Kafka consumers</text>
+<text x="160" y="267" class="m f">Redis connections</text>
+<text x="160" y="280" class="m e">Ограничивай ресурс до появления отказа,</text>
+<text x="160" y="288" class="m e">а не после exhaustion.</text></g>
+
+<!-- 6 APPLICATION LIFECYCLE -->
+<g><rect x="286" y="174" width="116" height="111" rx="2" class="card"/>
+<text x="294" y="189" class="a num">06.</text><text x="307" y="189" class="t ct">APPLICATION LIFECYCLE</text>
+<line x1="294" y1="196" x2="394" y2="196" class="r"/>
+<text x="294" y="211" class="m q">Как все owned resources завершаются вместе?</text>
+<text x="294" y="224" class="a tag">STATE</text>
+<text x="294" y="235" class="m f">INIT</text>
+<text x="294" y="243" class="m f">READY</text>
+<text x="294" y="251" class="m f">SERVE</text>
+<text x="294" y="259" class="m f">DRAIN</text>
+<text x="294" y="267" class="m f">SHUTDOWN</text>
+<text x="294" y="280" class="a tag">RULE</text>
+<text x="294" y="288" class="m e">Lifecycle — ответственность owner,</text>
+<text x="294" y="295" class="m e">а не случайность порядка завершения.</text></g>
+</svg>

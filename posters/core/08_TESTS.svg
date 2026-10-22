@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1030" viewBox="0 0 1600 1030" role="img" aria-labelledby="title desc">
+<title id="title">Проверяем обещания программы</title><desc id="desc">Требование → выбранный пример → наблюдаемое ожидание.</desc>
+<defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0 0 L10 5 L0 10 Z" fill="#69d6f5"/></marker></defs>
+<rect width="1600" height="1030" fill="#0b111b"/>
+<text x="60" y="42" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="18" font-weight="400" fill="#69d6f5">GO BACKEND COMBAT  /  ПРАКТИЧЕСКИЙ МАРШРУТ</text>
+<text x="60" y="99" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="38" font-weight="700" fill="#eef5ff">Проверяем обещания программы</text>
+<text x="60" y="143" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">Требование → выбранный пример → наблюдаемое ожидание.</text>
+<path d="M60 165 H1540" stroke="#34455b"/>
+<rect x="60" y="220" width="460" height="310" rx="18" fill="#142030" stroke="#34455b" stroke-width="2"/>
+<rect x="60" y="242" width="5" height="32" rx="2" fill="#69d6f5"/>
+<text x="83" y="268" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="25" font-weight="700" fill="#69d6f5">Выбрать случай</text>
+<text x="83" y="308" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">Приоритет: 0, 1, 3, 4.</text>
+<text x="83" y="341" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">Пустое название и пробелы.</text>
+<text x="83" y="374" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">Повторный ID.</text>
+<text x="83" y="407" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">Пустое хранилище.</text>
+<text x="83" y="440" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">Ожидания записаны явно.</text>
+<rect x="570" y="220" width="460" height="310" rx="18" fill="#142030" stroke="#34455b" stroke-width="2"/>
+<rect x="570" y="242" width="5" height="32" rx="2" fill="#ffbf69"/>
+<text x="593" y="268" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="25" font-weight="700" fill="#ffbf69">Вызвать и сравнить</text>
+<text x="593" y="308" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">Подготовить своё состояние.</text>
+<text x="593" y="341" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">Вызвать операцию.</text>
+<text x="593" y="374" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">Проверить результат и error.</text>
+<text x="593" y="407" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">Проверить сохранность данных.</text>
+<text x="593" y="440" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">Сообщить вход / ожидание / факт.</text>
+<rect x="1080" y="220" width="460" height="310" rx="18" fill="#142030" stroke="#34455b" stroke-width="2"/>
+<rect x="1080" y="242" width="5" height="32" rx="2" fill="#8ee3b4"/>
+<text x="1103" y="268" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="25" font-weight="700" fill="#8ee3b4">Убедиться в пользе</text>
+<text x="1103" y="308" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">Убрать защиту дубликата.</text>
+<text x="1103" y="341" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">Тест должен заметить потерю.</text>
+<text x="1103" y="374" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">Вернуть правильный код.</text>
+<text x="1103" y="407" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">Запустить нужный набор.</text>
+<text x="1103" y="440" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">Зелёный ≠ доказано всё.</text>
+<path d="M525 375 H557" fill="none" stroke="#69d6f5" stroke-width="3" marker-end="url(#arrow)"/>
+<path d="M1035 375 H1067" fill="none" stroke="#69d6f5" stroke-width="3" marker-end="url(#arrow)"/>
+<rect x="60" y="625" width="720" height="280" rx="18" fill="#142030" stroke="#34455b" stroke-width="2"/>
+<rect x="60" y="647" width="5" height="32" rx="2" fill="#ffbf69"/>
+<text x="83" y="673" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="25" font-weight="700" fill="#ffbf69">Команды разработчика</text>
+<text x="83" y="713" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">go test ./...</text>
+<text x="83" y="746" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">go test ./... -run TestCopy -count=1 -v</text>
+<text x="83" y="779" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">go test ./... -cover</text>
+<rect x="820" y="625" width="720" height="280" rx="18" fill="#142030" stroke="#34455b" stroke-width="2"/>
+<rect x="820" y="647" width="5" height="32" rx="2" fill="#8ee3b4"/>
+<text x="843" y="673" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="25" font-weight="700" fill="#8ee3b4">Процент не заменяет смысл</text>
+<text x="843" y="713" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">Ветка выполнена — но результат проверен?</text>
+<text x="843" y="746" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">Тест знает договор или копирует реализацию?</text>
+<text x="843" y="779" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">Соседние тесты не делят одну map.</text>
+<path d="M60 957 H1540" stroke="#34455b"/>
+<text x="60" y="996" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="20" font-weight="400" fill="#b9c8dc">Тесты модели не проверяют сеть и настоящий PostgreSQL: у каждой проверки своя граница.</text>
+</svg>

@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1160" viewBox="0 0 1600 1160" role="img" aria-labelledby="title desc">
+<title id="title">Сначала защищаем вход. Затем действуем.</title><desc id="desc">Инвариант: неверный ввод и выполненное дело не создают напоминаний.</desc>
+<defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0 0 L10 5 L0 10 Z" fill="#69d6f5"/></marker></defs>
+<rect width="1600" height="1160" fill="#0b111b"/>
+<text x="60" y="42" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="18" font-weight="400" fill="#69d6f5">GO BACKEND COMBAT  /  ПЕРВАЯ ЧАСТЬ</text>
+<text x="60" y="99" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="38" font-weight="700" fill="#eef5ff">Сначала защищаем вход. Затем действуем.</text>
+<text x="60" y="143" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">Инвариант: неверный ввод и выполненное дело не создают напоминаний.</text>
+<path d="M60 165 H1540" stroke="#34455b"/>
+<rect x="575" y="200" width="450" height="100" rx="18" fill="#142030" stroke="#34455b" stroke-width="2"/>
+<rect x="575" y="222" width="5" height="32" rx="2" fill="#69d6f5"/>
+<text x="598" y="248" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="25" font-weight="700" fill="#69d6f5">Вход: priority, done, count</text>
+<rect x="575" y="355" width="450" height="110" rx="18" fill="#142030" stroke="#34455b" stroke-width="2"/>
+<rect x="575" y="377" width="5" height="32" rx="2" fill="#ffbf69"/>
+<text x="598" y="403" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="25" font-weight="700" fill="#ffbf69">Диапазоны допустимы?</text>
+<path d="M800 305 V342" fill="none" stroke="#69d6f5" stroke-width="3" marker-end="url(#arrow)"/>
+<rect x="1140" y="355" width="400" height="150" rx="18" fill="#142030" stroke="#34455b" stroke-width="2"/>
+<rect x="1140" y="377" width="5" height="32" rx="2" fill="#ffbf69"/>
+<text x="1163" y="403" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="25" font-weight="700" fill="#ffbf69">Отказ</text>
+<text x="1163" y="443" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">Понятная причина.</text>
+<text x="1163" y="476" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">Выход до побочного эффекта.</text>
+<path d="M1030 410 H1125" fill="none" stroke="#69d6f5" stroke-width="3" marker-end="url(#arrow)"/>
+<text x="1070" y="392" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="20" font-weight="400" fill="#69d6f5">нет</text>
+<rect x="575" y="520" width="450" height="100" rx="18" fill="#142030" stroke="#34455b" stroke-width="2"/>
+<rect x="575" y="542" width="5" height="32" rx="2" fill="#ffbf69"/>
+<text x="598" y="568" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="25" font-weight="700" fill="#ffbf69">Дело уже выполнено?</text>
+<path d="M800 469 V507" fill="none" stroke="#69d6f5" stroke-width="3" marker-end="url(#arrow)"/>
+<text x="820" y="495" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="20" font-weight="400" fill="#69d6f5">да</text>
+<rect x="60" y="510" width="405" height="160" rx="18" fill="#142030" stroke="#34455b" stroke-width="2"/>
+<rect x="60" y="532" width="5" height="32" rx="2" fill="#8ee3b4"/>
+<text x="83" y="558" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="25" font-weight="700" fill="#8ee3b4">Готово</text>
+<text x="83" y="598" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">Сообщить «Уже выполнено».</text>
+<text x="83" y="631" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">Не входить в цикл.</text>
+<path d="M570 568 H480" fill="none" stroke="#69d6f5" stroke-width="3" marker-end="url(#arrow)"/>
+<text x="502" y="549" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="20" font-weight="400" fill="#69d6f5">да</text>
+<rect x="575" y="685" width="450" height="135" rx="18" fill="#142030" stroke="#34455b" stroke-width="2"/>
+<rect x="575" y="707" width="5" height="32" rx="2" fill="#69d6f5"/>
+<text x="598" y="733" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="25" font-weight="700" fill="#69d6f5">Определить срочность</text>
+<text x="598" y="773" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">2–3: срочно; 1: обычно.</text>
+<path d="M800 625 V673" fill="none" stroke="#69d6f5" stroke-width="3" marker-end="url(#arrow)"/>
+<text x="820" y="653" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="20" font-weight="400" fill="#69d6f5">нет</text>
+<rect x="300" y="885" width="1000" height="150" rx="18" fill="#142030" stroke="#34455b" stroke-width="2"/>
+<rect x="300" y="907" width="5" height="32" rx="2" fill="#8ee3b4"/>
+<text x="323" y="933" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="25" font-weight="700" fill="#8ee3b4">for n := 1; n &lt;= count; n++</text>
+<text x="323" y="973" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">count = 3 → номера 1, 2, 3; при count = 0 тело не выполнится.</text>
+<text x="323" y="1006" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">Счётчик растёт, граница конечна: цикл завершается.</text>
+<path d="M800 825 V871" fill="none" stroke="#69d6f5" stroke-width="3" marker-end="url(#arrow)"/>
+<path d="M60 1087 H1540" stroke="#34455b"/>
+<text x="60" y="1126" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="20" font-weight="400" fill="#b9c8dc">Повторить сейчас ≠ запланировать на завтра. Проверку ставим до действия, которое нельзя отменить.</text>
+</svg>

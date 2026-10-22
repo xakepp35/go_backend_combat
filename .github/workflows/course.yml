@@ -1,0 +1,32 @@
+name: Course contracts
+on: [push, pull_request]
+permissions:
+  contents: read
+jobs:
+  core:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-go@v6
+        with:
+          go-version: '1.27.2'
+          cache: false
+      - run: python3 tools/validate_course.py
+      - run: python3 tools/check_examples.py
+      - run: python3 tools/check_all.py
+      - run: python3 tools/check_mutants.py
+      - run: python3 tools/smoke_compose.py
+  advanced:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-go@v6
+        with:
+          go-version: '1.27.2'
+          cache: false
+      - run: python3 advanced/jobflow/tools/validate_course.py
+      - run: python3 advanced/jobflow/tools/check_all.py
+      - run: python3 advanced/jobflow/tools/check_mutants.py
+      - run: python3 advanced/jobflow/tools/smoke_compose.py

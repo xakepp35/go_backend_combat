@@ -1,1 +1,7 @@
 /tmp
+/.cache/
+/.continuation/
+**/__pycache__/
+**/coverage.out
+**/bin/
+**/.env

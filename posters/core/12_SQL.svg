@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1030" viewBox="0 0 1600 1030" role="img" aria-labelledby="title desc">
+<title id="title">Сначала договор. Затем запрос.</title><desc id="desc">Песочница jobflow_lab отделена от базы приложения jobflow.</desc>
+<defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0 0 L10 5 L0 10 Z" fill="#69d6f5"/></marker></defs>
+<rect width="1600" height="1030" fill="#0b111b"/>
+<text x="60" y="42" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="18" font-weight="400" fill="#69d6f5">GO BACKEND COMBAT  /  ПРАКТИЧЕСКИЙ МАРШРУТ</text>
+<text x="60" y="99" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="38" font-weight="700" fill="#eef5ff">Сначала договор. Затем запрос.</text>
+<text x="60" y="143" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">Песочница jobflow_lab отделена от базы приложения jobflow.</text>
+<path d="M60 165 H1540" stroke="#34455b"/>
+<rect x="60" y="220" width="460" height="310" rx="18" fill="#142030" stroke="#34455b" stroke-width="2"/>
+<rect x="60" y="242" width="5" height="32" rx="2" fill="#69d6f5"/>
+<text x="83" y="268" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="25" font-weight="700" fill="#69d6f5">Ограничения таблицы</text>
+<text x="83" y="308" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">PRIMARY KEY → уникальный ID.</text>
+<text x="83" y="341" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">NOT NULL → значение есть.</text>
+<text x="83" y="374" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">CHECK → правило допустимости.</text>
+<text x="83" y="407" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">DEFAULT → значение по умолчанию.</text>
+<text x="83" y="440" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">Пробелы ≠ отсутствие значения.</text>
+<rect x="570" y="220" width="460" height="310" rx="18" fill="#142030" stroke="#34455b" stroke-width="2"/>
+<rect x="570" y="242" width="5" height="32" rx="2" fill="#ffbf69"/>
+<text x="593" y="268" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="25" font-weight="700" fill="#ffbf69">Запрос с намерением</text>
+<text x="593" y="308" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">INSERT: указаны столбцы.</text>
+<text x="593" y="341" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">UPDATE / DELETE: есть WHERE.</text>
+<text x="593" y="374" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">RETURNING: видим изменения.</text>
+<text x="593" y="407" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">SELECT: нужные поля.</text>
+<text x="593" y="440" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">Параметры Go добавим на 14.</text>
+<rect x="1080" y="220" width="460" height="310" rx="18" fill="#142030" stroke="#34455b" stroke-width="2"/>
+<rect x="1080" y="242" width="5" height="32" rx="2" fill="#8ee3b4"/>
+<text x="1103" y="268" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="25" font-weight="700" fill="#8ee3b4">Наблюдаемый результат</text>
+<text x="1103" y="308" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">ORDER BY задаёт порядок.</text>
+<text x="1103" y="341" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">LIMIT сам не выбирает порядок.</text>
+<text x="1103" y="374" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">UPDATE 0 строк — не SQL error.</text>
+<text x="1103" y="407" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">NULL проверяем через IS NULL.</text>
+<text x="1103" y="440" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">После отказа читаем состояние.</text>
+<path d="M525 375 H557" fill="none" stroke="#69d6f5" stroke-width="3" marker-end="url(#arrow)"/>
+<path d="M1035 375 H1067" fill="none" stroke="#69d6f5" stroke-width="3" marker-end="url(#arrow)"/>
+<rect x="60" y="625" width="720" height="280" rx="18" fill="#142030" stroke="#34455b" stroke-width="2"/>
+<rect x="60" y="647" width="5" height="32" rx="2" fill="#ffbf69"/>
+<text x="83" y="673" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="25" font-weight="700" fill="#ffbf69">Практика 12–13</text>
+<text x="83" y="713" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">psql работает внутри контейнера.</text>
+<text x="83" y="746" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">В jobflow_lab экспериментируем с SQL.</text>
+<text x="83" y="779" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">Перезапуск без удаления тома хранит данные.</text>
+<rect x="820" y="625" width="720" height="280" rx="18" fill="#142030" stroke="#34455b" stroke-width="2"/>
+<rect x="820" y="647" width="5" height="32" rx="2" fill="#8ee3b4"/>
+<text x="843" y="673" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="25" font-weight="700" fill="#8ee3b4">Схема приложения с 14</text>
+<text x="843" y="713" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">jobflow управляется Goose при старте.</text>
+<text x="843" y="746" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">SQL входит в бинарник через embed.FS.</text>
+<text x="843" y="779" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">Ручные опыты не подменяют миграции.</text>
+<path d="M60 957 H1540" stroke="#34455b"/>
+<text x="60" y="996" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="20" font-weight="400" fill="#b9c8dc">Ошибка ограничения защищает данные. Не убирай правило только ради успешного INSERT.</text>
+</svg>

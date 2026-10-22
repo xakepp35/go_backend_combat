@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1150" viewBox="0 0 1600 1150" role="img" aria-labelledby="title desc">
+<title id="title">JOIN создаёт строки подходящих пар</title><desc id="desc">Три задачи: у a два события, у b одно, у c ни одного.</desc>
+<defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0 0 L10 5 L0 10 Z" fill="#69d6f5"/></marker></defs>
+<rect width="1600" height="1150" fill="#0b111b"/>
+<text x="60" y="42" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="18" font-weight="400" fill="#69d6f5">GO BACKEND COMBAT  /  HTTP / ДАННЫЕ / ДОГОВОРЫ</text>
+<text x="60" y="99" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="38" font-weight="700" fill="#eef5ff">JOIN создаёт строки подходящих пар</text>
+<text x="60" y="143" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">Три задачи: у a два события, у b одно, у c ни одного.</text>
+<path d="M60 165 H1540" stroke="#34455b"/>
+<rect x="60" y="210" width="450" height="250" rx="18" fill="#142030" stroke="#34455b" stroke-width="2"/>
+<rect x="60" y="232" width="5" height="32" rx="2" fill="#69d6f5"/>
+<text x="83" y="258" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="25" font-weight="700" fill="#69d6f5">Исходные данные</text>
+<text x="83" y="298" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">tasks: a, b, c</text>
+<text x="83" y="331" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">events: a-created</text>
+<text x="83" y="364" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">              a-changed</text>
+<text x="83" y="397" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">              b-created</text>
+<rect x="575" y="210" width="450" height="250" rx="18" fill="#142030" stroke="#34455b" stroke-width="2"/>
+<rect x="575" y="232" width="5" height="32" rx="2" fill="#ffbf69"/>
+<text x="598" y="258" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="25" font-weight="700" fill="#ffbf69">JOIN → 3 строки</text>
+<text x="598" y="298" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">a + created</text>
+<text x="598" y="331" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">a + changed</text>
+<text x="598" y="364" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">b + created</text>
+<text x="598" y="397" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">c не имеет подходящей пары.</text>
+<rect x="1090" y="210" width="450" height="250" rx="18" fill="#142030" stroke="#34455b" stroke-width="2"/>
+<rect x="1090" y="232" width="5" height="32" rx="2" fill="#8ee3b4"/>
+<text x="1113" y="258" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="25" font-weight="700" fill="#8ee3b4">LEFT JOIN → 4 строки</text>
+<text x="1113" y="298" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">a + created</text>
+<text x="1113" y="331" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">a + changed</text>
+<text x="1113" y="364" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">b + created</text>
+<text x="1113" y="397" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">c + NULL</text>
+<path d="M515 335 H562" fill="none" stroke="#69d6f5" stroke-width="3" marker-end="url(#arrow)"/>
+<path d="M1030 335 H1077" fill="none" stroke="#69d6f5" stroke-width="3" marker-end="url(#arrow)"/>
+<rect x="60" y="550" width="710" height="215" rx="18" fill="#142030" stroke="#34455b" stroke-width="2"/>
+<rect x="60" y="572" width="5" height="32" rx="2" fill="#69d6f5"/>
+<text x="83" y="598" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="25" font-weight="700" fill="#69d6f5">Условие справа в ON</text>
+<text x="83" y="638" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">LEFT JOIN events ON ...</text>
+<text x="83" y="671" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">AND action = &#x27;changed&#x27;</text>
+<text x="83" y="704" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">Сохраняем задачи без такого события.</text>
+<text x="83" y="737" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">Справа у них NULL.</text>
+<rect x="830" y="550" width="710" height="215" rx="18" fill="#142030" stroke="#34455b" stroke-width="2"/>
+<rect x="830" y="572" width="5" height="32" rx="2" fill="#ffbf69"/>
+<text x="853" y="598" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="25" font-weight="700" fill="#ffbf69">То же условие в WHERE</text>
+<text x="853" y="638" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">LEFT JOIN events ON ...</text>
+<text x="853" y="671" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">WHERE action = &#x27;changed&#x27;</text>
+<text x="853" y="704" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">Строки с NULL справа отсекаются.</text>
+<text x="853" y="737" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">Задачи без changed исчезают.</text>
+<rect x="60" y="830" width="710" height="170" rx="18" fill="#142030" stroke="#34455b" stroke-width="2"/>
+<rect x="60" y="852" width="5" height="32" rx="2" fill="#8ee3b4"/>
+<text x="83" y="878" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="25" font-weight="700" fill="#8ee3b4">COUNT после LEFT JOIN</text>
+<text x="83" y="918" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">count(e.id): a=2, b=1, c=0</text>
+<text x="83" y="951" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">count(*):    a=2, b=1, c=1</text>
+<text x="83" y="984" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">Считай события, а не сохранённые строки.</text>
+<rect x="830" y="830" width="710" height="170" rx="18" fill="#142030" stroke="#34455b" stroke-width="2"/>
+<rect x="830" y="852" width="5" height="32" rx="2" fill="#ffbf69"/>
+<text x="853" y="878" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="25" font-weight="700" fill="#ffbf69">Связность ≠ атомарность</text>
+<text x="853" y="918" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">Внешний ключ запрещает сирот.</text>
+<text x="853" y="951" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">CASCADE удаляет историю вместе с задачей.</text>
+<text x="853" y="984" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">Две записи станут атомарными на 16.</text>
+<path d="M60 1077 H1540" stroke="#34455b"/>
+<text x="60" y="1116" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="20" font-weight="400" fill="#b9c8dc">Сначала предскажи каждую пару. DISTINCT не объясняет ошибку в форме результата.</text>
+</svg>

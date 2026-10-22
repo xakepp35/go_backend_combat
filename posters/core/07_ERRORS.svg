@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1030" viewBox="0 0 1600 1030" role="img" aria-labelledby="title desc">
+<title id="title">Отказ не должен портить состояние</title><desc id="desc">Ошибка — значение с причиной. Решение принимает вызывающий.</desc>
+<defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0 0 L10 5 L0 10 Z" fill="#69d6f5"/></marker></defs>
+<rect width="1600" height="1030" fill="#0b111b"/>
+<text x="60" y="42" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="18" font-weight="400" fill="#69d6f5">GO BACKEND COMBAT  /  ПРАКТИЧЕСКИЙ МАРШРУТ</text>
+<text x="60" y="99" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="38" font-weight="700" fill="#eef5ff">Отказ не должен портить состояние</text>
+<text x="60" y="143" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">Ошибка — значение с причиной. Решение принимает вызывающий.</text>
+<path d="M60 165 H1540" stroke="#34455b"/>
+<rect x="60" y="220" width="460" height="310" rx="18" fill="#142030" stroke="#34455b" stroke-width="2"/>
+<rect x="60" y="242" width="5" height="32" rx="2" fill="#69d6f5"/>
+<text x="83" y="268" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="25" font-weight="700" fill="#69d6f5">Проверить</text>
+<text x="83" y="308" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">ID и название не пустые.</text>
+<text x="83" y="341" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">Приоритет от 1 до 3.</text>
+<text x="83" y="374" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">Проверка Validate до записи.</text>
+<text x="83" y="407" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">Неверный ввод → ErrInvalid.</text>
+<text x="83" y="440" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">Состояние ещё прежнее.</text>
+<rect x="570" y="220" width="460" height="310" rx="18" fill="#142030" stroke="#34455b" stroke-width="2"/>
+<rect x="570" y="242" width="5" height="32" rx="2" fill="#ffbf69"/>
+<text x="593" y="268" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="25" font-weight="700" fill="#ffbf69">Выполнить или отказать</text>
+<text x="593" y="308" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">ID занят → ErrConflict.</text>
+<text x="593" y="341" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">ID не найден → ErrNotFound.</text>
+<text x="593" y="374" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">Успех → результат, nil.</text>
+<text x="593" y="407" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">При отказе старое не трогаем.</text>
+<text x="593" y="440" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">Не используем panic для ввода.</text>
+<rect x="1080" y="220" width="460" height="310" rx="18" fill="#142030" stroke="#34455b" stroke-width="2"/>
+<rect x="1080" y="242" width="5" height="32" rx="2" fill="#8ee3b4"/>
+<text x="1103" y="268" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="25" font-weight="700" fill="#8ee3b4">Передать причину</text>
+<text x="1103" y="308" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">fmt.Errorf(&quot;...: %w&quot;, err)</text>
+<text x="1103" y="341" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">Контекст добавлен.</text>
+<text x="1103" y="374" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">Исходная причина сохранена.</text>
+<text x="1103" y="407" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">errors.Is узнаёт категорию.</text>
+<text x="1103" y="440" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">Не сравниваем текст.</text>
+<path d="M525 375 H557" fill="none" stroke="#69d6f5" stroke-width="3" marker-end="url(#arrow)"/>
+<path d="M1035 375 H1067" fill="none" stroke="#69d6f5" stroke-width="3" marker-end="url(#arrow)"/>
+<rect x="60" y="625" width="720" height="280" rx="18" fill="#142030" stroke="#34455b" stroke-width="2"/>
+<rect x="60" y="647" width="5" height="32" rx="2" fill="#ffbf69"/>
+<text x="83" y="673" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="25" font-weight="700" fill="#ffbf69">Проверка после отказа</text>
+<text x="83" y="713" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">Создать a: «Чай».</text>
+<text x="83" y="746" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">Попробовать a: «Кофе» → ErrConflict.</text>
+<text x="83" y="779" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">Прочитать a: там всё ещё «Чай».</text>
+<rect x="820" y="625" width="720" height="280" rx="18" fill="#142030" stroke="#34455b" stroke-width="2"/>
+<rect x="820" y="647" width="5" height="32" rx="2" fill="#8ee3b4"/>
+<text x="843" y="673" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="25" font-weight="700" fill="#8ee3b4">Кто объясняет результат</text>
+<text x="843" y="713" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">Хранилище возвращает причину.</text>
+<text x="843" y="746" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">Владелец сценария выбирает сообщение.</text>
+<text x="843" y="779" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">Одна ошибка не требует пяти логов.</text>
+<path d="M60 957 H1540" stroke="#34455b"/>
+<text x="60" y="996" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="20" font-weight="400" fill="#b9c8dc">Повтор не исправит неверное название. Сначала различи причину, затем выбирай действие.</text>
+</svg>

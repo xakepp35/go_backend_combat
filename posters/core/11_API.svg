@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1110" viewBox="0 0 1600 1110" role="img" aria-labelledby="title desc">
+<title id="title">Та же задача. Новый вход. Те же гарантии.</title><desc id="desc">HTTP-представление и сервисный объект — разные договоры.</desc>
+<defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0 0 L10 5 L0 10 Z" fill="#69d6f5"/></marker></defs>
+<rect width="1600" height="1110" fill="#0b111b"/>
+<text x="60" y="42" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="18" font-weight="400" fill="#69d6f5">GO BACKEND COMBAT  /  HTTP / ДАННЫЕ / ДОГОВОРЫ</text>
+<text x="60" y="99" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="38" font-weight="700" fill="#eef5ff">Та же задача. Новый вход. Те же гарантии.</text>
+<text x="60" y="143" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">HTTP-представление и сервисный объект — разные договоры.</text>
+<path d="M60 165 H1540" stroke="#34455b"/>
+<rect x="60" y="225" width="450" height="280" rx="18" fill="#142030" stroke="#34455b" stroke-width="2"/>
+<rect x="60" y="247" width="5" height="32" rx="2" fill="#69d6f5"/>
+<text x="83" y="273" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="25" font-weight="700" fill="#69d6f5">HTTP-адаптер</text>
+<text x="83" y="313" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">POST /tasks + JSON</text>
+<text x="83" y="346" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">Ограничить размер тела.</text>
+<text x="83" y="379" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">Прочитать ровно один документ.</text>
+<text x="83" y="412" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">Вызвать pkg.TaskService.</text>
+<text x="83" y="445" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">Оформить статус и ответ.</text>
+<rect x="575" y="225" width="450" height="280" rx="18" fill="#142030" stroke="#34455b" stroke-width="2"/>
+<rect x="575" y="247" width="5" height="32" rx="2" fill="#ffbf69"/>
+<text x="598" y="273" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="25" font-weight="700" fill="#ffbf69">Сценарий app</text>
+<text x="598" y="313" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">(ctx, req) → (res, err)</text>
+<text x="598" y="346" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">Task.Validate до записи.</text>
+<text x="598" y="379" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">Ошибка — категория из pkg.</text>
+<text x="598" y="412" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">Вызов TaskRepository.</text>
+<text x="598" y="445" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">Нет импорта HTTP / драйвера.</text>
+<rect x="1090" y="225" width="450" height="280" rx="18" fill="#142030" stroke="#34455b" stroke-width="2"/>
+<rect x="1090" y="247" width="5" height="32" rx="2" fill="#8ee3b4"/>
+<text x="1113" y="273" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="25" font-weight="700" fill="#8ee3b4">Реализация порта</text>
+<text x="1113" y="313" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">memory сейчас, postgres с 14.</text>
+<text x="1113" y="346" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">Уникальность ID атомарна.</text>
+<text x="1113" y="379" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">Дубликат не затирает старое.</text>
+<text x="1113" y="412" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">Плохой ввод не затирает данные.</text>
+<text x="1113" y="445" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">SQL не попадает в API.</text>
+<path d="M515 365 H562" fill="none" stroke="#69d6f5" stroke-width="3" marker-end="url(#arrow)"/>
+<path d="M1030 365 H1077" fill="none" stroke="#69d6f5" stroke-width="3" marker-end="url(#arrow)"/>
+<rect x="60" y="595" width="710" height="185" rx="18" fill="#142030" stroke="#34455b" stroke-width="2"/>
+<rect x="60" y="617" width="5" height="32" rx="2" fill="#69d6f5"/>
+<text x="83" y="643" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="25" font-weight="700" fill="#69d6f5">Список на сервисной границе</text>
+<text x="83" y="683" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">ListTasksResponse{Tasks: ...}</text>
+<text x="83" y="716" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">Объект оставляет место для новых полей.</text>
+<text x="83" y="749" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">Не возвращаем голый срез из сервиса.</text>
+<rect x="830" y="595" width="710" height="185" rx="18" fill="#142030" stroke="#34455b" stroke-width="2"/>
+<rect x="830" y="617" width="5" height="32" rx="2" fill="#8ee3b4"/>
+<text x="853" y="643" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="25" font-weight="700" fill="#8ee3b4">Список для HTTP v1</text>
+<text x="853" y="683" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">Кодируем res.Tasks → [] или массив.</text>
+<text x="853" y="716" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">Внешний формат сохраняем для клиента.</text>
+<text x="853" y="749" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">Новый формат требует отдельного договора.</text>
+<path d="M775 688 H817" fill="none" stroke="#69d6f5" stroke-width="3" marker-end="url(#arrow)"/>
+<rect x="60" y="830" width="1480" height="155" rx="18" fill="#142030" stroke="#34455b" stroke-width="2"/>
+<rect x="60" y="852" width="5" height="32" rx="2" fill="#ffbf69"/>
+<text x="83" y="878" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="25" font-weight="700" fill="#ffbf69">Причина внутри → результат снаружи</text>
+<text x="83" y="918" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">ErrInvalid → 400  |  ErrNotFound → 404  |  ErrConflict → 409  |  другая → 500</text>
+<text x="83" y="951" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">Decoder: лимит / неизвестные поля / EOF. Валидация: допустимость самой задачи.</text>
+<path d="M60 1037 H1540" stroke="#34455b"/>
+<text x="60" y="1076" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="20" font-weight="400" fill="#b9c8dc">Сервис не знает HTTP-коды. Транспорт не знает драйвер. Проверяем результат и состояние после отказа.</text>
+</svg>

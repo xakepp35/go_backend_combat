@@ -1,0 +1,6 @@
+# Preserve the original interview bank's Markdown hard line breaks (two spaces).
+interview/README.md whitespace=-blank-at-eol
+
+# The Git lesson contains literal 7-character teaching examples.
+# Real merge conflicts in that document use distinct 32-character markers.
+docs/GIT.md conflict-marker-size=32

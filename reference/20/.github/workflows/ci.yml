@@ -1,0 +1,27 @@
+name: Go checks
+on: [push, pull_request]
+permissions:
+  contents: read
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    services:
+      postgres:
+        image: postgres:18.0-alpine
+        env:
+          POSTGRES_DB: jobflow
+          POSTGRES_USER: jobflow
+          POSTGRES_PASSWORD: jobflow
+        ports: ['5432:5432']
+        options: >-
+          --health-cmd "pg_isready -U jobflow -d jobflow"
+          --health-interval 2s --health-timeout 2s --health-retries 30
+    env:
+      JF_TEST_DATABASE_URL: postgres://jobflow:jobflow@127.0.0.1:5432/jobflow?sslmode=disable
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-go@v6
+        with:
+          go-version: '1.27.2'
+          cache: false
+      - run: go test -race ./...

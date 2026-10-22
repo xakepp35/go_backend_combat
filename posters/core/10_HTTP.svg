@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1080" viewBox="0 0 1600 1080" role="img" aria-labelledby="title desc">
+<title id="title">Одна просьба проходит несколько границ</title><desc id="desc">Сначала выясни, где остановился разговор. Потом меняй код.</desc>
+<defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0 0 L10 5 L0 10 Z" fill="#69d6f5"/></marker></defs>
+<rect width="1600" height="1080" fill="#0b111b"/>
+<text x="60" y="42" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="18" font-weight="400" fill="#69d6f5">GO BACKEND COMBAT  /  HTTP / ДАННЫЕ / ДОГОВОРЫ</text>
+<text x="60" y="99" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="38" font-weight="700" fill="#eef5ff">Одна просьба проходит несколько границ</text>
+<text x="60" y="143" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">Сначала выясни, где остановился разговор. Потом меняй код.</text>
+<path d="M60 165 H1540" stroke="#34455b"/>
+<rect x="60" y="220" width="460" height="245" rx="18" fill="#142030" stroke="#34455b" stroke-width="2"/>
+<rect x="60" y="242" width="5" height="32" rx="2" fill="#69d6f5"/>
+<text x="83" y="268" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="25" font-weight="700" fill="#69d6f5">Клиент</text>
+<text x="83" y="308" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">Браузер / curl / Python</text>
+<text x="83" y="341" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">GET /hello?name=Аня</text>
+<text x="83" y="374" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">Host: localhost:8080</text>
+<rect x="570" y="220" width="460" height="245" rx="18" fill="#142030" stroke="#34455b" stroke-width="2"/>
+<rect x="570" y="242" width="5" height="32" rx="2" fill="#ffbf69"/>
+<text x="593" y="268" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="25" font-weight="700" fill="#ffbf69">Сеть и процесс</text>
+<text x="593" y="308" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">Хост → опубликованный порт</text>
+<text x="593" y="341" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">Внутри app: :8080</text>
+<text x="593" y="374" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">Сервер принимает запрос.</text>
+<rect x="1080" y="220" width="460" height="245" rx="18" fill="#142030" stroke="#34455b" stroke-width="2"/>
+<rect x="1080" y="242" width="5" height="32" rx="2" fill="#8ee3b4"/>
+<text x="1103" y="268" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="25" font-weight="700" fill="#8ee3b4">Маршрут и обработчик</text>
+<text x="1103" y="308" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">ServeMux: GET /hello</text>
+<text x="1103" y="341" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">r — вход; w — ответ.</text>
+<text x="1103" y="374" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">Функция формирует текст.</text>
+<path d="M525 345 H557" fill="none" stroke="#69d6f5" stroke-width="3" marker-end="url(#arrow)"/>
+<path d="M1035 345 H1067" fill="none" stroke="#69d6f5" stroke-width="3" marker-end="url(#arrow)"/>
+<path d="M1320 477 V550 H280 V477" fill="none" stroke="#69d6f5" stroke-width="3" marker-end="url(#arrow)"/>
+<text x="800" y="530" text-anchor="middle" font-family="DejaVu Sans,sans-serif" font-size="24" font-weight="700" fill="#69d6f5">Ответ: статус → заголовки → пустая строка → тело</text>
+<rect x="60" y="620" width="710" height="290" rx="18" fill="#142030" stroke="#34455b" stroke-width="2"/>
+<rect x="60" y="642" width="5" height="32" rx="2" fill="#8ee3b4"/>
+<text x="83" y="668" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="25" font-weight="700" fill="#8ee3b4">HTTP-ответ получен</text>
+<text x="83" y="708" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">200: выбранный обработчик ответил.</text>
+<text x="83" y="741" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">404: подходящего пути / ресурса нет.</text>
+<text x="83" y="774" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">405: метод не подходит маршруту.</text>
+<text x="83" y="807" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">500: внутри сервиса произошёл отказ.</text>
+<rect x="830" y="620" width="710" height="290" rx="18" fill="#142030" stroke="#34455b" stroke-width="2"/>
+<rect x="830" y="642" width="5" height="32" rx="2" fill="#ffbf69"/>
+<text x="853" y="668" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="25" font-weight="700" fill="#ffbf69">HTTP-ответа нет</text>
+<text x="853" y="708" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">Процесс запущен? Порт опубликован?</text>
+<text x="853" y="741" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">В контейнере localhost — он сам.</text>
+<text x="853" y="774" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">Проверь ps, logs, адрес и порт.</text>
+<text x="853" y="807" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#b9c8dc">Restart не собирает изменённый код.</text>
+<path d="M60 1007 H1540" stroke="#34455b"/>
+<text x="60" y="1046" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="20" font-weight="400" fill="#b9c8dc">GET читает бизнес-состояние. Healthz без БД пока говорит только о доступности процесса.</text>
+</svg>
