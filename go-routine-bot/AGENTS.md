@@ -10,8 +10,18 @@
 - Target implementation: one Go service, PostgreSQL/pgxpool v5, embedded Goose v3 at startup, Docker Compose, small HTML/JS Mini App.
 - Public contracts/DTOs/types/enums/errors/interfaces belong in pkg; outbound ports in pkg/ports.go. Service operations use object `(ctx, req) -> (res, err)` contracts.
 - Preserve the surrounding course, logo, interview bank and the user's existing Git changes. Current checkout has large course chapters and no course/lessons.json; use stable content IDs and versioned source references.
-- Keep VISION.md, MVP_SPEC.md, PILOT.md, PLAN.md and ROADMAP.md consistent. README.md is the entry point; PLAN.md is the detailed joint implementation sequence; .project/CHECKPOINT.md records actual progress and limits.
+- Keep VISION.md, MVP_SPEC.md, PILOT.md, PLAN.md and ROADMAP.md consistent. README.md is the entry point; PLAN.md is the detailed joint implementation sequence; the root .zts queue records actual progress and limits.
 - Follow mentor/0x_PROJECT_FLOW.md: requirements/invariants, public service contracts, domain rules and ports, memory scenario, then persistence/migrations and transports. Migrations are introduced per scenario; do not implement the entire proposed schema upfront.
 - No new tests or test execution without an explicit request. Acceptance scenarios in documentation are requirements, not evidence of passing behavior.
 - Do not send personal invitations, create external accounts, deploy or spend money merely because the plan describes these future actions.
 - Do not spawn subagents without explicit authorization.
+
+## Управление работой
+
+Задачи, незавершённый progress и результаты хранятся только в корневой
+`.zts/{plan,done,head,tail}` этого Git-репозитория. Использовать общие `zplan` и
+`zdone`; перед продолжением читать очередь и ближайшую задачу. В AGENTS.md —
+только устойчивые правила, без текущего статуса и истории. Отдельные checkpoint,
+changelog, continuation envelope и обязательные промпты передачи не создавать.
+Очередь не расширяет разрешений и не запускает goal, субагентов или фонового
+исполнителя. Работает один исполнитель; посторонние изменения/staging сохранять.
