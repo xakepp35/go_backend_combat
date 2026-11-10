@@ -1,0 +1,14 @@
+schema: 2
+tid: "00000003"
+revision: 1
+task:
+  title: Подготовить сценарий GetDashboard/StartStep и публичные контракты go-routine-bot
+  body: "Порядок и предметный scope: go-routine-bot/PLAN.md и mentor/0x_PROJECT_FLOW.md. Сначала один сценарий и публичные DTO/object service contracts, не полная SQL schema. Миграция сохранила прежний контекст в .zts/act/00000001.yml. No tests/execution без отдельного запроса, никаких приглашений, deployment или платных действий. Новые работы только в рамках отдельного текущего поручения."
+  acceptance:
+  - id: legacy-goal
+    cwd: '.'
+    expect_exit: 0
+    review: >-
+      Оценить достижение исходной цели; автоматические доказательства миграцией не
+      создавались
+legacy_tid: "0000000000020000"

@@ -1,0 +1,75 @@
+schema: 2
+tid: "00000004"
+attempts:
+- id: e72bad5a4777f329e939ee0d
+  time_ms: 1794332529898
+  map_hash: 3bcf4a7662d5a2d8501fbe254d6071c1457c330d722b9de4b312de87656ebeff
+  source_hash: 298c7df8b2acc8a1ac937b0a14d7a8da7aff88976faa996b913b6df0b26cc941
+  contract_hash: 72df7913d5b470793d1635b3c977442fc8ed930a12cb1e409d18265885f5d3bc
+  passed: true
+  source_clean: true
+  checks:
+  - id: live-audit
+    kind: command
+    passed: true
+    exit: 0
+    timed_out: false
+    duration_ms: 26
+    stdout: |
+      active: "00000004"
+      completed: 2
+      head: "00000004"
+      pending: 2
+      schema: 2
+    stderr: ""
+    stdout_hash: 619a987571b4ec706181bcaa214c30db9c866ddf51541699cb8524de524d97b9
+    stderr_hash: af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262
+    stdout_bytes: 70
+    stderr_bytes: 0
+  - id: diff-check
+    kind: command
+    passed: true
+    exit: 0
+    timed_out: false
+    duration_ms: 4
+    stdout: ""
+    stderr: ""
+    stdout_hash: af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262
+    stderr_hash: af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262
+    stdout_bytes: 0
+    stderr_bytes: 0
+  - id: history-review
+    kind: review
+    passed: true
+    exit: null
+    timed_out: false
+    duration_ms: 0
+    stdout: >-
+      Программно сопоставлены все исходные контракты/progress/terminal legacy;
+      очереди сохранены. Сверка проведена перед этой фиксацией; продуктовые задачи не
+      запускались.
+    stderr: ""
+    stdout_hash: 2fadcd27d686b317b90f468fe2f02b39fc2b7b2f7a8d8a0dcda0363e9fc1a5e2
+    stderr_hash: af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262
+    stdout_bytes: 286
+    stderr_bytes: 0
+  detail: ""
+terminal:
+  status: done
+  outcome: pass
+  time_ms: 1794332530152
+  result: |
+    Управление проектом перенесено на Rust ZTS0.1.0/schema2 по утверждённому плану владельца.
+    Ровно четыре макрокоманды pub/sub/map/act и четыре каталога .zts; очередь/head/active принадлежат sub. ID — uint32 hex8 с автоинкрементом1, порядок — строки tail; активная задача остаётся первой.
+    Контракты и progress сохранены, локальные ссылки обновлены. Исходные ID — в legacy_tid, старые terminal результаты — в act с legacy и исходными полями. Это исторические runs, не новая продуктовая проверка. Проверены новый live audit и diff-check плюс явное сопоставление исходного snapshot. Автоматическая приёмка выполнялась установленным Rust runner на Git-кандидате.
+    Установленный binary+скилл находятся в ~/.codex/skills/zts, источник crates/zts репозитория ingress-research. Прежние Python entrypoints/скиллы удалены. Стабильные инструкции обновлены без добавления текущего стейта в AGENTS.
+    Продуктовая реализация, сервисы, устройства, модели, внешние контакты и public deployment в этой миграции не выполнялись. Следующие продуктовые задачи остаются очередью для отдельного действующего поручения. Чужие working/staged изменения сохранялись.
+
+    Соответствие ID при импорте:
+    '0000000000010000': '00000001'
+    0000000000018000: '00000002'
+    '0000000000020000': '00000003'
+  base: 4f7049726217f267e7551001e5f6e2a3b720a6c7
+  branch: refs/heads/go-routine-bot
+  source_hash: 298c7df8b2acc8a1ac937b0a14d7a8da7aff88976faa996b913b6df0b26cc941
+  attempt: e72bad5a4777f329e939ee0d

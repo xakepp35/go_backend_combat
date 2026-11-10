@@ -1,0 +1,71 @@
+schema: 2
+tid: "00000004"
+phase: act
+revision: 3
+owner: null
+progress: ""
+context:
+  base: 4f7049726217f267e7551001e5f6e2a3b720a6c7
+  branch: refs/heads/go-routine-bot
+  prefix: ""
+  dirty:
+  - .gitignore
+  - AGENTS.md
+  - README.md
+  - go-routine-bot/AGENTS.md
+  - go.mod
+  - pkg/jog/AGENTS.md
+  - pkg/jog/README.md
+  - pkg/jog/benchmark_test.go
+  - pkg/jog/benchmarks/README.md
+  - pkg/jog/benchmarks/compare.sh
+  - pkg/jog/benchmarks/compare_test.go.tmpl
+  - pkg/jog/benchmarks/results/2026-11-07/README.md
+  - pkg/jog/benchmarks/results/2026-11-07/adapter-guards.patch
+  - pkg/jog/benchmarks/results/2026-11-07/after/environment.txt
+  - pkg/jog/benchmarks/results/2026-11-07/after/harness-sha256.txt
+  - pkg/jog/benchmarks/results/2026-11-07/after/module-checksums.txt
+  - pkg/jog/benchmarks/results/2026-11-07/after/raw.txt
+  - pkg/jog/benchmarks/results/2026-11-07/after/source-sha256.txt
+  - pkg/jog/benchmarks/results/2026-11-07/after/summary.json
+  - pkg/jog/benchmarks/results/2026-11-07/after/temporary-module.txt
+  - pkg/jog/benchmarks/results/2026-11-07/before/environment.txt
+  - pkg/jog/benchmarks/results/2026-11-07/before/harness-sha256.txt
+  - pkg/jog/benchmarks/results/2026-11-07/before/module-checksums.txt
+  - pkg/jog/benchmarks/results/2026-11-07/before/raw.txt
+  - pkg/jog/benchmarks/results/2026-11-07/before/source-sha256.txt
+  - pkg/jog/benchmarks/results/2026-11-07/before/summary.json
+  - pkg/jog/benchmarks/results/2026-11-07/before/temporary-module.txt
+  - pkg/jog/benchmarks/results/2026-11-07/optimization.patch
+  - pkg/jog/benchmarks/summarize.py
+  - pkg/jog/codec.go
+  - pkg/jog/codec_test.go
+  - pkg/jog/doc.go
+  - pkg/jog/error_policy.go
+  - pkg/jog/error_policy_test.go
+  - pkg/jog/example_test.go
+  - pkg/jog/future.go
+  - pkg/jog/graph.go
+  - pkg/jog/graph_test.go
+  - pkg/jog/handler.go
+  - pkg/jog/journal.go
+  - pkg/jog/pool.go
+  - pkg/jog/pool_test.go
+  - pkg/jog/recovery_test.go
+  - pkg/jog/retry.go
+  - pkg/jog/run.go
+  - pkg/jog/wal.go
+  - pkg/jog/wal_lock_other.go
+  - pkg/jog/wal_lock_unix.go
+  - pkg/jog/wal_test.go
+  - reviews/README.md
+  - reviews/practice/taskgraph/check.py
+  - reviews/practice/taskgraph/mentor_test.go
+  - reviews/practice/taskgraph/next.md
+  - reviews/practice/taskgraph/review.md
+  adopted:
+  - AGENTS.md
+  - go-routine-bot/AGENTS.md
+  - pkg/jog/AGENTS.md
+map_hash: 3bcf4a7662d5a2d8501fbe254d6071c1457c330d722b9de4b312de87656ebeff
+inflight: null

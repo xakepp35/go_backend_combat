@@ -1,0 +1,11 @@
+schema: 2
+tid: "00000003"
+phase: pub
+revision: 0
+owner: null
+progress: >-
+  Миграция не запускала реализацию; следующий шаг восстановлен из прежнего
+  проектного контекста.
+context: null
+map_hash: null
+inflight: null

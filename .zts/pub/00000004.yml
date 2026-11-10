@@ -1,0 +1,36 @@
+schema: 2
+tid: "00000004"
+revision: 1
+task:
+  title: Перенести управление проектом на Rust ZTS schema2
+  body: >-
+    Миграция общего task manager по прямому поручению владельца. Сохранены прежние
+    цели, progress и исторические результаты; новые критерии не переобъявляют старые
+    проверки. Продуктовые задачи не выполняются; изменяются только .zts и устойчивые
+    ссылки/инструкции. Внешние действия этой задачей не разрешаются.
+  acceptance:
+  - id: live-audit
+    argv:
+    - /home/a/.codex/skills/zts/bin/zts
+    - --root
+    - /home/a/github.com/xakepp35/go_backend_combat
+    - sub
+    - --audit
+    cwd: '.'
+    timeout_s: 30
+    expect_exit: 0
+  - id: diff-check
+    argv:
+    - git
+    - diff
+    - --check
+    - --cached
+    cwd: '.'
+    timeout_s: 30
+    expect_exit: 0
+  - id: history-review
+    cwd: '.'
+    expect_exit: 0
+    review: >-
+      Контракты, progress, terminal legacy и порядок сверены с исходным snapshot;
+      старые machine runs не объявлены новыми; посторонний код/индекс сохранены.
