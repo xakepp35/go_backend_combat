@@ -21,6 +21,7 @@
 | **06** | Backend Architecture, HTTP, application layer, Redis, composition root | [Теория](student/07_BACKEND_ARCHITECTURE.md) | [Практика](combat/07_BACKEND_ARCHITECTURE.md) | [Ментор](mentor/07_BACKEND_ARCHITECTURE.md) |
 | **07** | Project Completion, Финальная сборка, smoke tests, failure review      | [Теория](student/07_BACKEND.md)              | [Практика](combat/07_BACKEND.md)              | [Ментор](mentor/07_BACKEND_ARCHITECTURE.md) |
 | **08** | Mock Interview 60-минутное интервью по всему курсу                     | [Теория](student/08_INTERVIEW.md)            | [Практика](combat/08_INTERVIEW.md)            | [Ментор](mentor/08_INTERVIEW.md)            |
+| **09** | Алгоритмы: поиск идеи, инварианты, выбор метода — спецурок 60–90 минут | — | — | [Сценарий и ответы](mentor/09_ALGORITHMS.md) |
 
 ---
 
@@ -124,7 +125,8 @@ structs / methods
 │   ├── 05_DATA_PERSISTENCE.md
 │   ├── 06_DISTRIBUTED_SYSTEMS.md
 │   ├── 07_BACKEND_ARCHITECTURE.md
-│   └── 08_INTERVIEW.md
+│   ├── 08_INTERVIEW.md
+│   └── 09_ALGORITHMS.md
 │
 ├── student/
 │   └── ...
